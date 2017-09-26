@@ -34,16 +34,16 @@ router.post('/api/contact', function (req, res, next) {
       rejectUnauthorized: false
     },
     from: "Bent Oak systems <no-reply@bentoak.systems>",
-    to: 'ali.71hariri@gmail.com'
+    to: 'amin.azarbadegan@gmail.com'
   };
 
   let transport = nodemailer.createTransport(mailConfig);
 
-  let senderName = (req.name === null ? 'One of the visitors of BentOak website ' : req.name);
+  let senderName = (req.body.name === null ? 'One of the visitors of BentOak website ' : req.body.name);
 
   let plainContent = 'Dear Amin,\n' + senderName + ' send you a message.\n' +
-                     'The message is in below.\n\n' + req.content + '\n\n' +
-                     'Sender\'s email is ' + req.email +
+                     'The message is in below.\n\n' + req.body.content + '\n\n' +
+                     'Sender\'s email is ' + req.body.email +
                      '\nBest regards,\nBentOak Developers';
 
   let htmlContent = `<p>Dear Amin</p>
@@ -51,10 +51,10 @@ router.post('/api/contact', function (req, res, next) {
                      <p>The message is in below</p>
                      <br/>
                      <br/>
-                     <div>${req.content}</div>
+                     <div>${req.body.content}</div>
                      <br/>
                      <br/>
-                     <p>Sender's email is ${req.email}</p>
+                     <p>Sender's email is ${req.body.email}</p>
                      <p>Best regards</p>
                      <p>BentOak Developers</p>`;
 
