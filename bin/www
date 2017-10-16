@@ -8,6 +8,16 @@ var app = require('../app');
 var debug = require('debug')('bos-website:server');
 var http = require('http');
 
+const configMail = require('../config.mail');
+//Get and setup environments variables for configMail
+configMail.mailCredentialData({
+  port: process.env['MAILGUN_SMTP_PORT'],
+  address: process.env['MAILGUN_SMTP_SERVER'],
+  user_name: process.env['MAILGUN_SMTP_LOGIN'],
+  password: process.env['MAILGUN_SMTP_PASSWORD'],
+  domain: 'bentoak.heroku.com'
+});
+
 /**
  * Get port from environment and store in Express.
  */
