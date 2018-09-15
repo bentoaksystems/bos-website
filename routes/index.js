@@ -5,20 +5,20 @@ const path = require('path');
 var mailData = require('../config.mail');
 
 /* Diverting unknown routes to Angular router */
-router.all("*",function(req,res,next){
+router.all("*", function (req, res, next) {
   /* Redirect http to https */
-    if(req.originalUrl.indexOf('api') === -1) {
-        console.log('[TRACE] Server 404 request: ' + req.originalUrl);
-        var p = path.join(__dirname, '../public', 'index.html').replace(/\/routes\//, '/');
-        res.status(200).sendFile(p);
-    }
-    else
-        next();
+  if (req.originalUrl.indexOf('api') === -1) {
+    console.log('[TRACE] Server 404 request: ' + req.originalUrl);
+    var p = path.join(__dirname, '../public', 'index.html').replace(/\/routes\//, '/');
+    res.status(200).sendFile(p);
+  }
+  else
+    next();
 });
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function (req, res, next) {
+  res.render('index', {title: 'Express'});
 });
 
 router.post('/api/contact', function (req, res, next) {
@@ -42,9 +42,9 @@ router.post('/api/contact', function (req, res, next) {
   let senderName = (req.body.name === null ? 'One of the visitors of BentOak website ' : req.body.name);
 
   let plainContent = 'Dear Amin,\n' + senderName + ' send you a message.\n' +
-                     'The message is in below.\n\n' + req.body.content + '\n\n' +
-                     'Sender\'s email is ' + req.body.email +
-                     '\nBest regards,\nBentOak Developers';
+    'The message is in below.\n\n' + req.body.content + '\n\n' +
+    'Sender\'s email is ' + req.body.email +
+    '\nBest regards,\nBentOak Developers';
 
   let htmlContent = `<p>Dear Amin</p>
                      <p>${senderName} send you a message</p>
@@ -67,12 +67,12 @@ router.post('/api/contact', function (req, res, next) {
   };
 
   transport.sendMail(mailOptions, (err, info) => {
-    if(err){
+    if (err) {
       console.error(err);
       res.status(500);
       res.send('Cannot send your message. Please try again.');
     }
-    else{
+    else {
       console.log('Message sent: ', info);
       res.status(200);
       res.send('Your message sent');
