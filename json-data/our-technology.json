@@ -1,0 +1,38 @@
+[
+  {
+    "fields": {
+      "title": "JavaScript",
+      "description": "Now the most popular programming language that can be used in the Web (its birthplace) as well as in any other application.",
+      "file": {
+        "contentType": "image/svg+xml",
+        "fileName": "js.svg",
+        "url": "//images.ctfassets.net/yati6i04nkb8/63ZrQ8EnmwIWiKky0qwKCy/590e739cc0b42368814884d3c469b9a0/js.svg",
+        "details": {
+          "image": {
+            "height": 600,
+            "width": 600
+          },
+          "size": 1156
+        }
+      }
+    }
+  },
+  {
+    "fields": {
+      "title": "JavaScript",
+      "description": "Using asynchronous nature of JavaScript and applying it to the server environment, Node.js became the perfect tool for creating micro-services in larger scales.",
+      "file": {
+        "contentType": "image/svg+xml",
+        "fileName": "nodejs-new-pantone-black.svg",
+        "url": "//images.ctfassets.net/yati6i04nkb8/6gU0J8QQWkyEuMEcAUmq0W/bceb2ef54afd79f8447a61a3484df1d7/nodejs-new-pantone-black.svg",
+        "details": {
+          "image": {
+            "height": 600,
+            "width": 600
+          },
+          "size": 1156
+        }
+      }
+    }
+  }
+]
