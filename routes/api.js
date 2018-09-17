@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var header_json = require('../json-data/header.json');
+var home_top_section_json = require('../json-data/home_top_section.json');
 
 
 router.post('/api/contact', function (req, res, next) {
@@ -67,6 +68,11 @@ router.post('/api/contact', function (req, res, next) {
 
 router.get('/header', function(req, res, next) {
   res.json(header_json);
+});
+
+
+router.get('/home/top_section', function(req, res, next) {
+  res.json(home_top_section_json);
 });
 
 
