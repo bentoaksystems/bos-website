@@ -1,8 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var header_json = require('../json-data/header.json');
-var technology_json = require('../json-data/technology.json');
+var header_json = require('../json-data/header');
+var technology_json = require('../json-data/technology');
+var footer_json = require('../json-data/footer');
 
 
 router.post('/api/contact', function (req, res, next) {
@@ -72,6 +73,10 @@ router.get('/header', function(req, res, next) {
 
 router.get('/technology', function(req, res, next) {
   res.json(technology_json);
+});
+
+router.get('/footer', function(req, res, next) {
+  res.json(footer_json);
 });
 
 

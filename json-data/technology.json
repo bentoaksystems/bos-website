@@ -2,6 +2,7 @@
   {
     "fields": {
       "title": "JavaScript",
+      "url": "https://www.javascript.com/",
       "description": "Now the most popular programming language that can be used in the Web (its birthplace) as well as in any other application.",
       "file": {
         "contentType": "image/svg+xml",
@@ -20,6 +21,7 @@
   {
     "fields": {
       "title": "Node.js",
+      "url": "https://nodejs.org/en/",
       "description": "Using asynchronous nature of JavaScript and applying it to the server environment, Node.js became the perfect tool for creating micro-services in larger scales.",
       "file": {
         "contentType": "image/svg+xml",
@@ -38,6 +40,7 @@
   {
     "fields": {
       "title": "MongoDB",
+      "url": "https://www.mongodb.com/",
       "description": "The favourite NoSQL database that matches perfectly with data paradigm of JavaScript (JSON) and suits large-scale non-structured data sources.",
       "file": {
         "contentType": "image/jpeg",
@@ -56,6 +59,7 @@
   {
     "fields": {
       "title": "PostgreSQL",
+      "url": "https://www.postgresql.org/",
       "description": "One of the best open source relational database management systems, PostgreSQL is a reliable tool for storage and retrieval of structured data.",
       "file": {
         "contentType": "image/png",
@@ -74,6 +78,7 @@
   {
     "fields": {
       "title": "TypeScript",
+      "url": "https://www.typescriptlang.org/",
       "description": "It is JavaScript with strong typing, that makes it tidier and more manageable in big projects. Invented in Microsoft and supported by Google.",
       "file": {
         "contentType": "image/png",
@@ -97,25 +102,7 @@
       "file": {
         "contentType": "image/png",
         "fileName": "angular.svg",
-        "url": "//images.ctfassets.net/yati6i04nkb8/1VYqPrDz0Ac84Y…SKgs/ff6c5ff0e1efcdea95ff40e3769adf62/angular.svg",
-        "details": {
-          "image": {
-            "height": 100,
-            "width": 100
-          },
-          "size": 300
-        }
-      }
-    }
-  },
-  {
-    "fields": {
-      "title": "Ionic ",
-      "description": "The top open source javascript framework, now based on Angular 2 +, for building amazing mobile apps on multiple ecosystems (iOS, android and windows phone).",
-      "file": {
-        "contentType": "image/png",
-        "fileName": "ionic-logo.png",
-        "url": "//images.ctfassets.net/yati6i04nkb8/5uRQhgDaqkqsQY…C/b90c101d8395ee98109c8f4d610e1416/ionic-logo.png",
+        "url": "https://images.ctfassets.net/yati6i04nkb8/1VYqPrDz0Ac84YsskESKgs/ff6c5ff0e1efcdea95ff40e3769adf62/angular.svg",
         "details": {
           "image": {
             "height": 100,
