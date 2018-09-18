@@ -1,0 +1,104 @@
+[
+  {
+      "title": "JavaScript",
+      "url": "https://www.javascript.com/",
+      "description": "Now the most popular programming language that can be used in the Web (its birthplace) as well as in any other application.",
+      "file": {
+        "contentType": "image/svg+xml",
+        "fileName": "js.svg",
+        "url": "//images.ctfassets.net/yati6i04nkb8/63ZrQ8EnmwIWiKky0qwKCy/590e739cc0b42368814884d3c469b9a0/js.svg",
+        "details": {
+          "image": {
+            "height": 100,
+            "width": 100
+          },
+          "size": 300
+        }
+      }
+  },
+  {
+      "title": "Node.js",
+      "url": "https://nodejs.org/en/",
+      "description": "Using asynchronous nature of JavaScript and applying it to the server environment, Node.js became the perfect tool for creating micro-services in larger scales.",
+      "file": {
+        "contentType": "image/svg+xml",
+        "fileName": "nodejs-new-pantone-black.svg",
+        "url": "//images.ctfassets.net/yati6i04nkb8/6gU0J8QQWkyEuMEcAUmq0W/bceb2ef54afd79f8447a61a3484df1d7/nodejs-new-pantone-black.svg",
+        "details": {
+          "image": {
+            "height": 100,
+            "width": 100
+          },
+          "size": 300
+        }
+      }
+  },
+  {
+      "title": "MongoDB",
+      "url": "https://www.mongodb.com/",
+      "description": "The favourite NoSQL database that matches perfectly with data paradigm of JavaScript (JSON) and suits large-scale non-structured data sources.",
+      "file": {
+        "contentType": "image/jpeg",
+        "fileName": "mongodb-logo-rgb-j6w271g1xn.jpg",
+        "url": "//images.ctfassets.net/yati6i04nkb8/5dgdrqHN8ceyS8Sc2acA6I/25dd6f775878510c79a2480d6cb714fb/mongodb-logo-rgb-j6w271g1xn.jpg",
+        "details": {
+          "image": {
+            "height": 100,
+            "width": 100
+          },
+          "size": 300
+        }
+      }
+  },
+  {
+      "title": "PostgreSQL",
+      "url": "https://www.postgresql.org/",
+      "description": "One of the best open source relational database management systems, PostgreSQL is a reliable tool for storage and retrieval of structured data.",
+      "file": {
+        "contentType": "image/png",
+        "fileName": "postgresql-logo.png",
+        "url": "//images.ctfassets.net/yati6i04nkb8/5pzJZqoruwsuoy4soSK2II/4ea25c62fa09866abd313948c6089041/postgresql-logo.png",
+        "details": {
+          "image": {
+            "height": 100,
+            "width": 100
+          },
+          "size": 300
+        }
+      }
+  },
+  {
+      "title": "TypeScript",
+      "url": "https://www.typescriptlang.org/",
+      "description": "It is JavaScript with strong typing, that makes it tidier and more manageable in big projects. Invented in Microsoft and supported by Google.",
+      "file": {
+        "contentType": "image/png",
+        "fileName": "image/svg+xml",
+        "url": "//images.ctfassets.net/yati6i04nkb8/42PJytruWA2UKSg6MeQs0o/9ddac22b0a46dbd296bfc0b694bd5fee/ts.svg",
+        "details": {
+          "image": {
+            "height": 100,
+            "width": 100
+          },
+          "size": 300
+        }
+      }
+  },
+  {
+      "title": "Angular 2 +",
+      "url": "https://angular.io/",
+      "description": "Angular is a JavaScript platform (with TypeScript and better modularity after version 2). Created by Google to build applications with the web.",
+      "file": {
+        "contentType": "image/png",
+        "fileName": "angular.svg",
+        "url": "https://images.ctfassets.net/yati6i04nkb8/1VYqPrDz0Ac84YsskESKgs/ff6c5ff0e1efcdea95ff40e3769adf62/angular.svg",
+        "details": {
+          "image": {
+            "height": 100,
+            "width": 100
+          },
+          "size": 300
+        }
+      }
+  }
+]
