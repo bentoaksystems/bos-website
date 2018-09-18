@@ -1,6 +1,5 @@
 [
   {
-    "fields": {
       "title": "JavaScript",
       "url": "https://www.javascript.com/",
       "description": "Now the most popular programming language that can be used in the Web (its birthplace) as well as in any other application.",
@@ -16,10 +15,8 @@
           "size": 300
         }
       }
-    }
   },
   {
-    "fields": {
       "title": "Node.js",
       "url": "https://nodejs.org/en/",
       "description": "Using asynchronous nature of JavaScript and applying it to the server environment, Node.js became the perfect tool for creating micro-services in larger scales.",
@@ -35,10 +32,8 @@
           "size": 300
         }
       }
-    }
   },
   {
-    "fields": {
       "title": "MongoDB",
       "url": "https://www.mongodb.com/",
       "description": "The favourite NoSQL database that matches perfectly with data paradigm of JavaScript (JSON) and suits large-scale non-structured data sources.",
@@ -54,10 +49,8 @@
           "size": 300
         }
       }
-    }
   },
   {
-    "fields": {
       "title": "PostgreSQL",
       "url": "https://www.postgresql.org/",
       "description": "One of the best open source relational database management systems, PostgreSQL is a reliable tool for storage and retrieval of structured data.",
@@ -73,10 +66,8 @@
           "size": 300
         }
       }
-    }
   },
   {
-    "fields": {
       "title": "TypeScript",
       "url": "https://www.typescriptlang.org/",
       "description": "It is JavaScript with strong typing, that makes it tidier and more manageable in big projects. Invented in Microsoft and supported by Google.",
@@ -92,10 +83,8 @@
           "size": 300
         }
       }
-    }
   },
   {
-    "fields": {
       "title": "Angular 2 +",
       "url": "https://angular.io/",
       "description": "Angular is a JavaScript platform (with TypeScript and better modularity after version 2). Created by Google to build applications with the web.",
@@ -111,6 +100,5 @@
           "size": 300
         }
       }
-    }
   }
 ]
