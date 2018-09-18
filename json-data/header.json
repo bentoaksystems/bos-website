@@ -1,4 +1,19 @@
 {
- "logo" : null,
-  "menu_tab" : ["Projects", "People", "About us", "contact"]
+ "logo" : "assets/images/logo.png",
+  "menu_tab" : [ {
+    "title" : "Contact",
+    "router_link" : "/contact"
+  }, {
+    "title" : "About us",
+    "router_link" : "/about-us"
+  }, {
+    "title" : "People",
+    "router_link" : "/people"
+  }, {
+    "title" : "Projects",
+    "router_link" : "/projects"
+  }, {
+    "title" : "Home",
+    "router_link" : "/"
+  }]
 }
