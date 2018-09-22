@@ -1,6 +1,5 @@
-[
-  {
-    "title": "about us",
-    "description": ""
-  }
-]
+{
+  "title": "about us",
+  "background": "assets/images/aboutUs.jpg",
+  "description": "\nBent Oak Systems was funded in summer 2016 in London, UK.\n \nAt the time we were a few Iranian professionals working for big international corporates and every time we met we had some exciting idea about a new app. But we lacked __the production line __for the ideas, and the contractors we found were either expensive or low-quality (and in both cases: not affordable).\n \n We decided to create the production line. Amin had the right motives and opportunities to move back to Iran and create the team, and after a few months we had a team.\n"
+}
