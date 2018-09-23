@@ -1,5 +1,5 @@
 {
- "logo" : "assets/images/logo.png",
+ "logo" : "assets/images/goog.png",
   "menu_tab" : [ {
     "title" : "Contact",
     "router_link" : "/contact"
