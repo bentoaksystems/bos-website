@@ -6,6 +6,7 @@ var people_json = require('../json-data/people.json');
 var home_top_section_json = require('../json-data/home_top_section.json');
 var technology_json = require('../json-data/technology');
 var footer_json = require('../json-data/footer');
+var about_us_json = require('../json-data/about_us');
 
 
 router.post('/api/contact', function (req, res, next) {
@@ -88,6 +89,10 @@ router.get('/technology', function(req, res, next) {
 
 router.get('/footer', function(req, res, next) {
   res.json(footer_json);
+});
+
+router.get('/about_us', function(req, res, next) {
+  res.json(about_us_json);
 });
 
 
