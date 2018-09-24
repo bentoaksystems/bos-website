@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0af70a77-f956-4099-bdd1-fcf2878771b4" name="Default" comment="header and top section is ok">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-data/header.json" afterPath="$PROJECT_DIR$/json-data/header.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-data/home_top_section.json" afterPath="$PROJECT_DIR$/json-data/home_top_section.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json-data/header.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state relative-caret-position="204">
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -34,7 +34,6 @@
             <state relative-caret-position="153">
               <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
-                <marker date="1537699592360" expanded="true" signature="0:274" ph="[...]" />
                 <marker date="1537699592360" expanded="true" signature="4:44" ph="{&quot;address&quot;: &quot;Unit 13 - No. 18 - Dr. Fathi Shaghaghi - Tehran&quot;...}" />
               </folding>
             </state>
@@ -71,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home_top_section.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home_top_section.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json-data/home_top_section.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="68">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -136,9 +135,9 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/api.js" />
-        <option value="$PROJECT_DIR$/json-data/home_top_section.json" />
         <option value="$PROJECT_DIR$/json-data/people.json" />
         <option value="$PROJECT_DIR$/json-data/header.json" />
+        <option value="$PROJECT_DIR$/json-data/home_top_section.json" />
       </list>
     </option>
   </component>
@@ -161,8 +160,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -179,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -215,6 +215,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,7 +224,7 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../website-client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
@@ -358,7 +359,8 @@
       <workItem from="1537165767168" duration="16453000" />
       <workItem from="1537249670512" duration="3003000" />
       <workItem from="1537598872975" duration="10177000" />
-      <workItem from="1537686294658" duration="4497000" />
+      <workItem from="1537686294658" duration="4528000" />
+      <workItem from="1537764790156" duration="2780000" />
     </task>
     <task id="LOCAL-00001" summary="Build">
       <created>1505041952407</created>
@@ -507,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537619988414</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="header and top section is ok">
+      <created>1537714362160</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1537714362160</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71027000" />
+    <option name="totallyTimeSpent" value="73838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -845,14 +854,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json-data/home_top_section.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -884,7 +885,6 @@
         <state relative-caret-position="153">
           <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
-            <marker date="1537699592360" expanded="true" signature="0:274" ph="[...]" />
             <marker date="1537699592360" expanded="true" signature="4:44" ph="{&quot;address&quot;: &quot;Unit 13 - No. 18 - Dr. Fathi Shaghaghi - Tehran&quot;...}" />
           </folding>
         </state>
@@ -892,8 +892,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json-data/header.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json-data/home_top_section.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
