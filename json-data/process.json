@@ -1,0 +1,32 @@
+[
+  {
+    "title": "IDEA",
+    "icon": "filter_1",
+    "description": "We shape your business ideas into reality and offer solutions which add value to your business."
+  },
+  {
+    "title": "PLAN",
+    "icon": "filter_2",
+    "description": "We shape your business ideas into reality and offer solutions which add value to your business."
+  },
+  {
+    "title": "DESIGN",
+    "icon": "filter_3",
+    "description": "We create innovative & attractive web design with great functionality to engage web traffic."
+  },
+  {
+    "title": "DEVELOPMENT",
+    "icon": "filter_4",
+    "description": "We offer specialized web development services which are functional & give a phenomenal performance."
+  },
+  {
+    "title": "TESTING",
+    "icon": "filter_5",
+    "description": "Our expert team executes comprehensive testing before approval."
+  },
+  {
+    "title": "DELIVERY",
+    "icon": "filter_6",
+    "description": "We deliver final product with utmost adherence to quality, time and efficiency."
+  }
+]
