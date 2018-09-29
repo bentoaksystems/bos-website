@@ -47,7 +47,7 @@
             "telegram": "t.me/alireza_hariri"
         },
         "favorites": "Coffee",
-        "description": "test description test description test description test description test description test description test description test description test description test description test description "
+        "description": "test description test description test description test description test description test description "
     },
     {
         "fullname": "Sareh Salehi",
@@ -60,6 +60,7 @@
             "telegram": "t.me/salehi"
         },
         "favorites": "unknown",
+
         "description": "test description test description test description test description test description "
     },
     {
@@ -78,15 +79,15 @@
     {
         "fullname": "Saman Vaziri",
         "image": "https://avatars1.githubusercontent.com/u/35308248?s=400&v=4",
-        "email": "samanvaziri@gmail.com",
+        "email": "saman.fv@gmail.com",
         "responsibility": "Full-Stack Developer / SEO",
-        "social": {
-            "linkedIn": "https://www.linkedin.com/in/imans77",
-            "github": "https://github.com/imans777",
-            "telegram": "t.me/omans7ToddOAnd"
-        },
+      "social": {
+        "linkedIn": "https://www.linkedin.com/#",
+        "github": "https://github.com/#/",
+        "telegram": "t.me/#"
+      },
         "favorites": "unknown",
-        "description": "test description test description test description test description test description test description "
+        "description": "test description test description test description test description test description test description test description test description test description "
     },
     {
         "fullname": "Mohammad Ali Farhad",
@@ -98,6 +99,6 @@
             "telegram": "t.me/mafarhad"
         },
         "favorites": "devOps",
-        "description": "test description test description test description test description test description test description test description test description test description test description test description "
+        "description": "test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description "
     }
 ]

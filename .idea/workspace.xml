@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0af70a77-f956-4099-bdd1-fcf2878771b4" name="Default" comment="commit to pull from master">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json-data/process.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-data/about_us.json" afterPath="$PROJECT_DIR$/json-data/about_us.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-data/home_top_section.json" afterPath="$PROJECT_DIR$/json-data/home_top_section.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-data/people.json" afterPath="$PROJECT_DIR$/json-data/people.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.js" afterPath="$PROJECT_DIR$/routes/api.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -127,8 +132,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,6 +316,7 @@
       <workItem from="1537856162362" duration="2647000" />
       <workItem from="1537946073514" duration="6235000" />
       <workItem from="1538198073666" duration="65000" />
+      <workItem from="1538198181335" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="Build">
       <created>1505041952407</created>
@@ -491,7 +497,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83685000" />
+    <option name="totallyTimeSpent" value="83692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
