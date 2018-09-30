@@ -1,6 +1,9 @@
 {
  "logo" : "assets/images/goog.png",
   "menu_tab" : [ {
+    "title" : "Pricing",
+    "router_link" : "/pricing"
+  },{
     "title" : "Contact",
     "router_link" : "/contact"
   }, {
