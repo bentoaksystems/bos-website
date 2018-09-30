@@ -9,6 +9,7 @@ var footer_json = require('../json-data/footer');
 var about_us_json = require('../json-data/about_us');
 var project_json = require('../json-data/project');
 var process_json = require('../json-data/process');
+var pricing_json = require('../json-data/pricing');
 
 
 router.post('/api/contact', function (req, res, next) {
@@ -103,6 +104,10 @@ router.get('/project', function(req, res, next) {
 
 router.get('/process', function(req, res, next) {
   res.json(process_json);
+});
+
+router.get('/pricing', function(req, res, next) {
+  res.json(pricing_json);
 });
 
 
