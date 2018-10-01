@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Basic",
+    "price": "£10",
+    "description1": "As much space as your team needs",
+    "description2": "Sophisticated control and security features"
+  },
+  {
+    "title": "Standard",
+    "price": "£20",
+    "description1": "Customizable solutions",
+    "description2": "Individualized support to help admins"
+  },
+  {
+    "title": "Advanced",
+    "price": "£30",
+    "description1": "As much space as your team needs",
+    "description2": "Sophisticated control and security features"
+  }
+]
