@@ -81,7 +81,6 @@ router.get('/people', (req, res, next) => {
   res.json(people_json);
 });
 
-
 router.get('/home/top_section', function(req, res, next) {
   res.json(home_top_section_json);
 });
