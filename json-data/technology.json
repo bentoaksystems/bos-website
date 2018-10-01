@@ -100,5 +100,56 @@
           "size": 300
         }
       }
+  },
+  {
+    "title": "Jenkins",
+    "url": "https://jenkins.io/",
+    "description": "Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems.",
+    "file": {
+      "contentType": "image/png",
+      "fileName": "Jenkins",
+      "url": "https://a.slack-edge.com/ae7f/img/services/jenkins-ci_512.png",
+      "details": {
+        "image": {
+          "height": 100,
+          "width": 100
+        },
+        "size": 300
+      }
+    }
+  },
+  {
+    "title": "Docker",
+    "url": "https://www.docker.com/",
+    "description": "Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud.",
+    "file": {
+      "contentType": "image/png",
+      "fileName": "Docker",
+      "url": "https://www.docker.com/sites/default/files/social/docker_facebook_share.png",
+      "details": {
+        "image": {
+          "height": 100,
+          "width": 100
+        },
+        "size": 300
+      }
+    }
+  },
+  {
+    "title": "Jira Software ",
+    "url": "https://www.atlassian.com/software/jira",
+    "description": "Jira is a proprietary issue tracking product developed by Atlassian which allows bug tracking and agile project management. ",
+    "file": {
+      "contentType": "image/png",
+      "fileName": "Jira Software",
+      "url": "https://marketplace.brainwavegrc.com/wp-content/uploads/bw_store_facet_images/bw_jira_activities_icon-900x0.png",
+      "details": {
+        "image": {
+          "height": 100,
+          "width": 100
+        },
+        "size": 300
+      }
+    }
   }
 ]
