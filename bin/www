@@ -8,6 +8,19 @@ var app = require('../app');
 var debug = require('debug')('bos-website:server');
 var http = require('http');
 
+
+/**
+ * Database
+ */
+// const configDB = require('../config.DB');
+// configDB.dbCredentialData({
+//   database: process.env.DATABASE,
+//   database_test: process.env.DATABASE + '_test',
+//   db_uri: process.env.DB_URI,
+//   db_uri_test: process.env.DB_URI_TEST,
+// })
+
+
 const configMail = require('../config.mail');
 //Get and setup environments variables for configMail
 configMail.mailCredentialData({
