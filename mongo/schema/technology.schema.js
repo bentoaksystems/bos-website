@@ -3,18 +3,21 @@ const Schema = require('mongoose').Schema;
 const schema_obj = {
   title: {
     type: Schema.Types.String,
-    trim: true,
-    required: true,
   },
-  background: {
+  url: {
     type: Schema.Types.String,
   },
   description: {
     type: Schema.Types.String,
+  },
+  file: {
+    type: {
+      url: Schema.Types.String
+    }
   }
 };
 
 
-let aboutUsSchema = new Schema(schema_obj, {collection: 'about_us', strict: true});
+let technologySchema = new Schema(schema_obj, {collection: 'technology', strict: true});
 
-module.exports = aboutUsSchema;
+module.exports = technologySchema;

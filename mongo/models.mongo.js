@@ -3,7 +3,14 @@ const env = require('../env');
 
 let schemas = {
   PeopleSchema: require('./schema/people.schema'),
-
+  FooterSchema: require('./schema/footer.schema'),
+  AboutUsSchema: require('./schema/about_us.schema'),
+  HeaderSchema: require('./schema/header.schema'),
+  HeaderTopSectionSchema: require('./schema/header_top_section.schema'),
+  PricingSchema: require('./schema/pricing.schema'),
+  ProcessSchema: require('./schema/process.schema'),
+  ProjectSchema: require('./schema/project.schema'),
+  technologySchema: require('./schema/technology.schema'),
 };
 
 

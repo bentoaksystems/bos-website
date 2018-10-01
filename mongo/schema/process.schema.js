@@ -3,10 +3,8 @@ const Schema = require('mongoose').Schema;
 const schema_obj = {
   title: {
     type: Schema.Types.String,
-    trim: true,
-    required: true,
   },
-  background: {
+  icon: {
     type: Schema.Types.String,
   },
   description: {
@@ -15,6 +13,6 @@ const schema_obj = {
 };
 
 
-let aboutUsSchema = new Schema(schema_obj, {collection: 'about_us', strict: true});
+let processSchema = new Schema(schema_obj, {collection: 'process', strict: true});
 
-module.exports = aboutUsSchema;
+module.exports = processSchema;

@@ -1,6 +1,10 @@
 const Schema = require('mongoose').Schema;
 
 const schema_obj = {
+  fullname: {
+    type: Schema.Types.String,
+    trim: true,
+  },
   first_name: {
     type: Schema.Types.String,
     trim: true,
