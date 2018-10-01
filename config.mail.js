@@ -10,5 +10,5 @@ let getMailCredentialData = () => {
 
 module.exports = {
   mailCredentialData,
-  getMailCredentialData
+  getMailCredentialData,
 };
