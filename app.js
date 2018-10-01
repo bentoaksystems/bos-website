@@ -1,15 +1,19 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const compression = require('compression');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-var api = require('./routes/api');
+const index = require('./routes/index');
+const users = require('./routes/users');
+const api = require('./routes/api');
 
-var app = express();
+const app = express();
+// app.use(compression());
+
+let isReady = true;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -45,4 +49,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+module.exports = {
+  get: () => app,
+  isReady: () => isReady,
+};
+
