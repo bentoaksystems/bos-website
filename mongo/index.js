@@ -13,7 +13,7 @@ let dbIsReady = () => {
     if (env.isDev) {
 
       function connect() {
-       const testConnection = mongoose.createConnection(env.db_uri_test);
+       // const testConnection = mongoose.createConnection(env.db_uri_test);
         testConnection.on('connected', function () {
           console.log('-> ', 'Mongoose test has been connected!');
           resolve({testConnection});

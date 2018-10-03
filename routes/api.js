@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+var Peo = require('../lib/people.model')
+
 var header_json = require('../json-data/header.json');
 var people_json = require('../json-data/people.json');
 var home_top_section_json = require('../json-data/home_top_section.json');
@@ -110,4 +112,8 @@ router.get('/pricing', function(req, res, next) {
 });
 
 
+router.get('/peopleTest', (req, res, next) => {
+
+});
+// router.post('/order', apiResponse('Order', 'addToOrder', false, ['user', 'body']));
 module.exports = router;
