@@ -60,21 +60,4 @@ describe("GET Page Info", () => {
       })
       .catch(lib.helpers.errorHandler.bind(this));
   });
-
-  it('should get a list of all people', function (done) {
-    this.done = done;
-    rp({
-      method: 'GET',
-      uri: `${env.appAddress}/api/page_info/people`,
-      json: true,
-      resolveWithFullResponse: true,
-    })
-      .then(res => {
-        expect(res.statusCode).toBe(200);
-        expect(res.body.map(el => el.email)).toContain('eabasir@gmail.com');
-        expect(res.body.map(el => el.email)).toContain('amin@azarbadegan.net');
-        done();
-      })
-      .catch(lib.helpers.errorHandler.bind(this));
-  });
 });
