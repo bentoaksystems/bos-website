@@ -9,7 +9,9 @@ const schema_obj = {
     type: Schema.Types.String,
     trim: true,
   },
-  social: [Schema.Types.Mixed],
+  social: {
+    type: Schema.Types.Mixed
+  },
   phone: {
     type: Schema.Types.String,
   },

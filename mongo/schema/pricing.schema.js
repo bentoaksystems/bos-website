@@ -4,8 +4,14 @@ const schema_obj = {
   title: {
     type: Schema.Types.String,
   },
-  price: {
+  planning_price: {
     type: Schema.Types.String,
+  },
+  programming_price: {
+    type: Schema.Types.String
+  },
+  backing_price: {
+    type: Schema.Types.String
   },
   description1: {
     type: Schema.Types.String,
