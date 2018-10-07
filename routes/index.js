@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const nodemailer = require('nodemailer');
 const path = require('path');
-var mailData = require('../config.mail');
 
 /* Diverting unknown routes to Angular router */
 router.all("*", function (req, res, next) {

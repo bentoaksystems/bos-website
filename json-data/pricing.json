@@ -1,7 +1,7 @@
 [
   {
     "title": "Basic",
-    "planing_price": 25,
+    "planning_price": 25,
     "programming_price":15 ,
     "backing_price":10 ,
     "description1": "As much space as your team needs",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Standard",
-    "planing_price": 30,
+    "planning_price": 30,
     "programming_price":20,
     "backing_price":10,
     "description1": "Customizable solutions",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Advanced",
-    "planing_price": 35,
+    "planning_price": 35,
     "programming_price":25 ,
     "backing_price":10 ,
     "description1": "As much space as your team needs",

@@ -22,7 +22,9 @@ const schema_obj = {
   responsibility: {
     type: Schema.Types.String,
   },
-  social: [Schema.Types.Mixed],
+  social: {
+    type: Schema.Types.Mixed
+  },
   favorites: {
     type: Schema.Types.String,
   },
