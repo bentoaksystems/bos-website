@@ -13,6 +13,6 @@ const schema_obj = {
 };
 
 
-let headerTopSectionSchema = new Schema(schema_obj, {collection: 'header_top_section', strict: true});
+let headerTopSectionSchema = new Schema(schema_obj, {collection: 'home_top_section', strict: true});
 
 module.exports = headerTopSectionSchema;
