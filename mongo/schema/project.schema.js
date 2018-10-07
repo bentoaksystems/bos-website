@@ -14,14 +14,11 @@ const schema_obj = {
     type: Schema.Types.String,
   },
   mainImage: {
-    type: {
-      title: Schema.Types.String,
-      url: Schema.Types.String
-    }
+    type: Schema.Types.Mixed,
   }
 };
 
 
-let processSchema = new Schema(schema_obj, {collection: 'pricing', strict: true});
+let processSchema = new Schema(schema_obj, {collection: 'project', strict: true});
 
 module.exports = processSchema;
