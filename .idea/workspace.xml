@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0af70a77-f956-4099-bdd1-fcf2878771b4" name="Default" comment="commit after pull from master">
+    <list default="true" id="0af70a77-f956-4099-bdd1-fcf2878771b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json-data/people.json" afterPath="$PROJECT_DIR$/json-data/people.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +22,8 @@
       <file leaf-file-name="people.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/json-data/people.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="20">
+              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -33,7 +34,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1539403040608" expanded="true" signature="4:300" ph="{&quot;description&quot;: &quot;\n Burgista needed a timesheet app with some specific features they couldn't find in other personnel time management systems.\n \n This was our first project, using angular 2 (still in beta version at the time) and Node.js.\n&quot;...}" />
+                <marker date="1539403040608" expanded="true" signature="3968:3974" ph="{&quot;contentType&quot;: &quot;image/jpeg&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +45,8 @@
       <file leaf-file-name="about_us.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json-data/about_us.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -130,8 +134,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -148,6 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,28 +160,11 @@
               <item name="bos-website" type="b2602c69:ProjectViewProjectNode" />
               <item name="bos-website" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bos-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bos-website" type="462c0819:PsiDirectoryNode" />
-              <item name="json-data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bos-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bos-website" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bos-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bos-website" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,7 +173,7 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../website-client" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
@@ -331,7 +319,10 @@
       <workItem from="1538144824434" duration="1828000" />
       <workItem from="1538155903181" duration="718000" />
       <workItem from="1538327198692" duration="2130000" />
-      <workItem from="1539100990313" duration="10000" />
+      <workItem from="1539100990313" duration="3614000" />
+      <workItem from="1539402888847" duration="5112000" />
+      <workItem from="1539410950419" duration="201000" />
+      <workItem from="1539420183926" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="Build">
       <created>1505041952407</created>
@@ -515,23 +506,37 @@
       <option name="project" value="LOCAL" />
       <updated>1538144891353</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="commit after pull from master">
+      <created>1539101006847</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1539101006847</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Merge branch 'added-files' of https://github.com/bentoaksystems/bos-website into web-site-sareh&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json">
+      <created>1539411052183</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1539411052183</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89818000" />
+    <option name="totallyTimeSpent" value="99070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24553572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21800596" sideWeight="0.47826087" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2657267" sideWeight="0.35018432" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47463176" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5040917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24553572" sideWeight="0.5217391" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6988543" sideWeight="0.6498157" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42716858" sideWeight="0.6498157" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -573,7 +578,8 @@
     <MESSAGE value="introRes en and fa merged into just one english intro" />
     <MESSAGE value="commit to pull from master" />
     <MESSAGE value="commit after pull from master" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit after pull from master" />
+    <MESSAGE value="Merge branch 'added-files' of https://github.com/bentoaksystems/bos-website into web-site-sareh&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'added-files' of https://github.com/bentoaksystems/bos-website into web-site-sareh&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -876,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/json-data/about_us.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -886,14 +892,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1539403040608" expanded="true" signature="4:300" ph="{&quot;description&quot;: &quot;\n Burgista needed a timesheet app with some specific features they couldn't find in other personnel time management systems.\n \n This was our first project, using angular 2 (still in beta version at the time) and Node.js.\n&quot;...}" />
+            <marker date="1539403040608" expanded="true" signature="3968:3974" ph="{&quot;contentType&quot;: &quot;image/jpeg&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/json-data/people.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="20">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
