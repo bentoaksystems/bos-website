@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0af70a77-f956-4099-bdd1-fcf2878771b4" name="Default" comment="Merge branch 'added-files' of https://github.com/bentoaksystems/bos-website into web-site-sareh&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json">
+    <list default="true" id="0af70a77-f956-4099-bdd1-fcf2878771b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -348,7 +348,7 @@
       <workItem from="1539402888847" duration="5112000" />
       <workItem from="1539410950419" duration="201000" />
       <workItem from="1539420183926" duration="379000" />
-      <workItem from="1539426728209" duration="1241000" />
+      <workItem from="1539426728209" duration="1252000" />
     </task>
     <task id="LOCAL-00001" summary="Build">
       <created>1505041952407</created>
@@ -574,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539427439190</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Merge branch 'added-files' of https://github.com/bentoaksystems/bos-website into web-site-sareh&#10;&#10;# Conflicts:&#10;#&#9;package-lock.json">
+      <created>1539427977645</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1539427977645</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102761000" />
+    <option name="totallyTimeSpent" value="102772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
