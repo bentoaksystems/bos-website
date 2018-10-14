@@ -1,17 +1,22 @@
 [
   {
-    "backgroundPic": "assets/images/docker.jpg",
+    "backgroundPic": "assets/images/bentoak.jpg",
     "title": "Bent Oak Systems",
-    "intro": "\n ### App Developers\n\nDecades of progress in Information and Communication Technologies provided creative souls with great fabric of the Web, the mobile and social computing, and a huge wealth of free, accessible and open-source programmatic toolset that was not imaginable even a few years ago.\n\nModern apps are combination of all these possibilities rammed into an easy-to-use, intuitive, usually hand-held gizmo for daily use.\n\nIn Bent Oak Systems we strive to create good apps for our clients. We create them on the Web, and on various Mobile ecosystems, and we create well-thought micro-services and data stores to support them.\n\nIn short we are software architects, designers and programmers focused on apps.\n\n### Thinking globally, acting locally\n\nWith global partners in London, UK, we are a global software development team with high standards for quality and delivery.\n\nOn the other hand, we proudly use our local advantages: a dynamic startup environment in Tehran that generates lots of talented developers, and with inexpensive cost of living that enables us to reduce our cost of develpment to fraction and make real value for money.\n"
+    "intro": "Bent Oak Systems was founded in summer 2016 in London, UK."
   },
   {
-    "backgroundPic": "assets/images/devops.jpg",
+    "backgroundPic": "assets/images/CICD.jpg",
     "title": "CI/CD",
-    "intro": "\n intuitive, usually hand-held gizmo for daily use.\n\nIn Bent Oak Systems we strive to create good apps for our clients. We create them on the Web, and on various Mobile ecosystems, and we create well-thought micro-services and data stores to support them.\n\nIn short we are software architects, designers and programmers focused on apps.\n\n### Thinking globally, acting locally\n\nWith global partners in London, UK, we are a global software development team with high standards for quality and delivery.\n\nOn the other hand, we proudly use our local advantages: a dynamic startup environment in Tehran that generates lots of talented developers, and with inexpensive cost of living that enables us to reduce our cost of develpment to fraction and make real value for money.\n"
+    "intro": "We are committed to Continuous Integration: to keep code integrity with a multi-branch (git) repository."
   },
   {
-    "backgroundPic": "assets/images/social.jpg",
-    "title": "Social",
-    "intro": "\n  clients. We create them on the Web, and on various Mobile ecosystems \n"
+    "backgroundPic": "assets/images/softwareDevelopment.jpg",
+    "title": "Software Development",
+    "intro": "Today the systems, their users and their sources of data are more and more distributed."
+  },
+  {
+    "backgroundPic": "assets/images/web-development.jpg",
+    "title": "Web Development",
+    "intro": "Your business web site can be your fingerprint, your business card, your showroom and your marketplace."
   }
 ]
