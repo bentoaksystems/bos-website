@@ -10,6 +10,7 @@ let schemas = {
   ProcessSchema: require('./schema/process.schema'),
   ProjectSchema: require('./schema/project.schema'),
   TechnologySchema: require('./schema/technology.schema'),
+  BlogSchema: require('./schema/blog.schema')
 };
 
 // can save data out of schema using strict: false
