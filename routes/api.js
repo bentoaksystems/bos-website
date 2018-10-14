@@ -30,7 +30,6 @@ router.get('/page_info/pricing', APIHandler(lib.PageInfo.getPricing));
 router.get('/page_info/process', APIHandler(lib.PageInfo.getProcess));
 router.get('/page_info/project', APIHandler(lib.PageInfo.getProject));
 router.get('/page_info/technology', APIHandler(lib.PageInfo.getTechnology));
-router.get('/page_info/blog', APIHandler(lib.PageInfo.getBlog));
 
 router.post('/contact', APIHandler(lib.Contact.submit));
 
