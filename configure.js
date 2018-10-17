@@ -1,5 +1,6 @@
 const db = require('./mongo');
 const models = require('./mongo/models.mongo');
+const dbHelpers = require('./lib/db-helpers');
 
 const jsons = {
   AboutUs: require('./json-data/about_us'),
@@ -14,6 +15,10 @@ const jsons = {
 }
 
 modelIsReady()
+  .then(res => {
+    // forcely drop all in database
+    return dbHelpers.dropAll(true);
+  })
   .then(res => {
     return Promise.all(Object.keys(models()).map(el => {
       if (jsons.hasOwnProperty(el)) {
