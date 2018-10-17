@@ -34,14 +34,18 @@ const isDev = env === 'development';
  * EMAIL_PASSWORD
  * EMAIL_USERNAME_DEV
  * EMAIL_PASSWORD_DEV
+ * 
+ * If you want to use HEROKU db, use 'DB_USE=heroku',
+ * otherwise, ignore this, as the default db is local
  *
  * a .env file that might work for many:
  ** START **
- # the values must not be initiated with '!!'
+    # the values must not be initiated with '!!'
     APP_NAME=BOS-Website
     APP_ADDRESS=http://localhost:4000
     PORT=4000
 
+    # DB_USE=heroku
     DB_NAME=heroku_ss5zxvwl
     DB_URI=ds215563.mlab.com:15563
     DB_USERNAME=heroku_ss5zxvwl
@@ -64,12 +68,14 @@ const port = getEnvValue(process.env.PORT);
 /**
  * Database
  */
+const db_use = getEnvValue(process.env.DB_USE) || 'local';
+const suffix = isTest ? '_TEST' : (db_use === 'heroku' ? '_HEROKU' : '');
 const db = {
-  name: getEnvValue(isTest ? process.env.DB_NAME_TEST : process.env.DB_NAME),
-  uri: getEnvValue(isTest ? process.env.DB_URI_TEST : process.env.DB_URI),
+  name: getEnvValue(process.env['DB_NAME' + suffix]),
+  uri: getEnvValue(process.env['DB_URI' + suffix]),
 };
-const db_username = getEnvValue(isTest ? process.env.DB_USERNAME_TEST : process.env.DB_USERNAME);
-const db_password = getEnvValue(isTest ? process.env.DB_PASSWORD_TEST : process.env.DB_PASSWORD);
+const db_username = getEnvValue(process.env['DB_USERNAME' + suffix]);
+const db_password = getEnvValue(process.env['DB_PASSWORD' + suffix]);
 if (db_username && db_password) {
   db['username'] = db_username;
   db['password'] = db_password;
