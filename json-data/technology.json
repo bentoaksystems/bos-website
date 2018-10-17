@@ -12,7 +12,7 @@
   {
     "title": "Node.js",
     "url": "https://nodejs.org/en/",
-    "description": "Using asynchronous nature of JavaScript and applying it to the server environment, Node.js became the perfect tool for creating micro-services in larger scales.",
+    "description": "Node.js is a platform built on Chrome's JavaScript runtime for building fast and scalable network applications, providing a rich library of JS modules.",
     "file": {
       "contentType": "image/svg+xml",
       "fileName": "nodejs-new-pantone-black.svg",
@@ -87,6 +87,48 @@
       "contentType": "image/png",
       "fileName": "Jira Software",
       "url": "https://marketplace.brainwavegrc.com/wp-content/uploads/bw_store_facet_images/bw_jira_activities_icon-900x0.png"
+    }
+  },
+  {
+    "title": "Redis",
+    "url": "https://redis.io",
+    "description": "Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.",
+    "file": {
+      "contentType": "image/png",
+      "fileName": "Redis",
+      "url":"https://cdn.auth0.com/blog/logos/redis-icon-logo.png"
+    }
+  },
+  {
+    "title": "Git",
+    "url": "https://git-scm.com",
+    "description": " Git is a free and open source distributed version control system designed to handle everything in most projects with speed and efficiency.",
+    "file": {
+      "contentType": "image/png",
+      "fileName": "Git",
+      "url": "https://avatars3.githubusercontent.com/u/18133?s=200&v=4"
+    }
+  },
+  {
+    "title": "Slack",
+    "url": "https://slack.com",
+    "description": " Slack is a place where your team comes together to collaborate, important information can be found by the right people..",
+    "file": {
+      "contentType": "image/png",
+      "fileName": "Slack",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdvrsK0vhbYdQEU7P2mN2LkM0Cgfh3S9D17a4BYUvL7uRQJRb4"
+
+    }
+  },
+  {
+    "title": "Heroku",
+    "url": "https://www.heroku.com/home",
+    "description": " Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps, we're the fastest way to go from idea to URL.",
+    "file": {
+      "contentType": "image/png",
+      "fileName": "Heroku",
+      "url": "https://d1oxzbw21neycm.cloudfront.net/assets/service-thumbnails/Heroku.png"
+
     }
   }
 ]

@@ -5,7 +5,8 @@
         "email": "amin@azarbadegan.net",
         "responsibility": "Founder / CEO",
         "social": {
-            "github": "https://github.com/aminazar"
+            "github": "https://github.com/aminazar",
+            "linkedIn":"https://www.linkedin.com/in/aminazar/"
         },
         "favorites": "Artificial Life / Encryption",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -17,8 +18,7 @@
         "responsibility": "Technical Manager",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/ehsan-ansari-basir/",
-            "github": "https://github.com/eabasir",
-            "telegram": "t.me/eabasir"
+            "github": "https://github.com/eabasir"
         },
         "favorites": "Budget Project",
         "description": "A shorter description to see how it fits in the page and whether it stays inside the placeholder that was defined for it or not"
@@ -30,8 +30,7 @@
         "responsibility": "Businuess Consultant",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/mohammad-ali-alavian-ghavanini-804439120/",
-            "github": "https://github.com/maghavanini",
-            "telegram": "t.me/ghavanini"
+            "github": "https://github.com/maghavanini"
         },
         "favorites": "Hamburger",
         "description": "No description is found on this person!"
@@ -43,8 +42,7 @@
         "responsibility": "Full-stack Developer",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/alireza-hariri-4036459b/",
-            "github": "https://github.com/ARHariri",
-            "telegram": "t.me/alireza_hariri"
+            "github": "https://github.com/ARHariri"
         },
         "favorites": "Coffee",
         "description": "test description test description test description test description test description test description "
@@ -56,8 +54,7 @@
         "responsibility": "Full-Stack Developer / Test Automation",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/sareh-salehi-77327572/",
-            "github": "https://github.com/ssalehi",
-            "telegram": "t.me/salehi"
+            "github": "https://github.com/ssalehi"
         },
         "favorites": "unknown",
 
@@ -70,8 +67,7 @@
         "responsibility": "Full-stack Developer",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/imans77",
-            "github": "https://github.com/imans777",
-            "telegram": "t.me/omans7ToddOAnd"
+            "github": "https://github.com/imans777"
         },
         "favorites": "Technology",
         "description": "test description test description test description test description test description test description test description test description "
@@ -83,8 +79,7 @@
         "responsibility": "Full-Stack Developer / SEO",
       "social": {
         "linkedIn": "https://www.linkedin.com/#",
-        "github": "https://github.com/#/",
-        "telegram": "t.me/#"
+        "github": "https://github.com/#/"
       },
         "favorites": "unknown",
         "description": "test description test description test description test description test description test description test description test description test description "
@@ -96,7 +91,8 @@
         "responsibility": "Full-stack Developer",
         "social": {
             "github": "github.com/farhad",
-            "telegram": "t.me/mafarhad"
+            "linkedIn":"effeff"
+       
         },
         "favorites": "devOps",
         "description": "test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description "
