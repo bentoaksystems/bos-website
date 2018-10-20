@@ -1,3 +1,24 @@
 doctype html
 html
-    title='hiiii'
+    include header.pug
+    head
+        title='people page'
+        meta(name="keywords")(content="People, Founder / CEO, Technical Manager, Businuess Consultant, Full-stack Developer, Test Automation")
+    body
+        div(style="text-align: center;")
+            h1=title
+        h2(style="text-align: center;") People in our company
+        hr/
+        ul
+        each person in people
+            h2= person.fullname
+            img(src=person.image)(alt="top image")(style="width: 150px; height: 150px")
+            h3= person.responsibility
+            ul
+            each so in person.social
+                a(href= so): li=so
+            hr/
+        include footer.pug
+
+
+

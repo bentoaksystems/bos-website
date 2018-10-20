@@ -65,6 +65,7 @@ function dbCall(field, func) {
  */
 function templateHandler(templateName, parameters = {}) {
   return ((req, res) => {
+    console.log(JSON.stringify(req.data));
     res.render(templateName, Object.assign(
       req.data || {},
       parameters
@@ -97,5 +98,26 @@ router.get('/test',
   -> '/test' and 'test.pug' is implemented above
       as an example for different usages
 */
+router.get('/header',
+  dbCall('header', lib.PageInfo.getHeader),
+  templateHandler('header', {})
+);
+
+router.get('/footer',
+  dbCall('footer', lib.PageInfo.getFooter),
+  dbCall('about', lib.PageInfo.getAboutUs),
+  templateHandler('footer', {})
+);
+
+
+router.get('/people',
+  dbCall('header', lib.PageInfo.getHeader),
+  dbCall('people', lib.PageInfo.getPeople),
+  dbCall('footer', lib.PageInfo.getFooter),
+  dbCall('about', lib.PageInfo.getAboutUs),
+  templateHandler('people', {
+    title : 'People In Bent Oak Systems'
+  })
+);
 
 module.exports = router;
