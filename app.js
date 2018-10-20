@@ -5,9 +5,10 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compression = require('compression');
+const detector = require('spider-detector');
 
 const index = require('./routes/index');
-const users = require('./routes/users');
+const bot = require('./routes/bot');
 const api = require('./routes/api');
 
 const app = express();
@@ -21,23 +22,26 @@ app.set('view engine', 'pug');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(detector.middleware());
 
 app.use('/', index);
-app.use('/users', users);
+// this router is for google bots and spiders to be tricked
+// NOTE: use 'User-Agent Switcher' chrome extension on port 4000 to see these
+app.use('/', bot);
 app.use('/api', api);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
