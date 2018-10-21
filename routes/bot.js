@@ -65,7 +65,6 @@ function dbCall(field, func) {
  */
 function templateHandler(templateName, parameters = {}) {
   return ((req, res) => {
-    console.log(JSON.stringify(req.data));
     res.render(templateName, Object.assign(
       req.data || {},
       parameters
@@ -109,6 +108,29 @@ router.get('/footer',
   templateHandler('footer', {})
 );
 
+router.get('/home',
+  dbCall('header', lib.PageInfo.getHeader),
+  dbCall('topSection', lib.PageInfo.getHomeTopSection),
+  dbCall('ourProcess', lib.PageInfo.getProcess),
+  dbCall('toolbox', lib.PageInfo.getTechnology),
+  dbCall('footer', lib.PageInfo.getFooter),
+  dbCall('about', lib.PageInfo.getAboutUs),
+  templateHandler('home', {
+    title : 'Bent Oak Systems',
+    processTitle: 'Our Process',
+    toolboxTitle: 'Our Toolbox'
+  })
+);
+
+router.get('/projects',
+  dbCall('header', lib.PageInfo.getHeader),
+  dbCall('projects', lib.PageInfo.getProject),
+  dbCall('footer', lib.PageInfo.getFooter),
+  dbCall('about', lib.PageInfo.getAboutUs),
+  templateHandler('projects', {
+    title : 'Our Projects'
+  })
+);
 
 router.get('/people',
   dbCall('header', lib.PageInfo.getHeader),
@@ -119,5 +141,27 @@ router.get('/people',
     title : 'People In Bent Oak Systems'
   })
 );
+
+router.get('/about-us',
+  dbCall('header', lib.PageInfo.getHeader),
+  dbCall('footer', lib.PageInfo.getFooter),
+  dbCall('about', lib.PageInfo.getAboutUs),
+  templateHandler('about-us', {
+    title : 'About Us'
+  })
+);
+
+router.get('/contact',
+  dbCall('header', lib.PageInfo.getHeader),
+  dbCall('footer', lib.PageInfo.getFooter),
+  dbCall('about', lib.PageInfo.getAboutUs),
+  templateHandler('contact', {
+    title : 'Contact us'
+  })
+);
+
+
+
+
 
 module.exports = router;
