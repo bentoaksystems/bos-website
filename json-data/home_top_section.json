@@ -18,5 +18,10 @@
     "backgroundPic": "assets/images/web-development.jpg",
     "title": "Web Development",
     "intro": "Your business web site can be your fingerprint, your business card, your showroom and your marketplace."
+  },
+  {
+    "backgroundPic" : "assets/images/technical-support.jpg",
+    "title" : "Technical Support",
+    "intro" : "Software ages like the live beasts, and without well-thought prospect of training, support, maintenance ..."
   }
 ]
