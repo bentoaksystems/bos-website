@@ -1,0 +1,24 @@
+doctype html
+html
+    body
+        div(style="background-color: grey; color: white; padding : 10px")
+            - let f = footer[0]
+            div(style="width:33%; display:inline-block")
+                div(style="margin-bottom: 10px")
+                    b="Get in touch with us"
+                div= f.address
+                div=f.phone
+                div
+                    a(href='mailto:' + f.email)= f.email
+            div(style="width:33%; display:inline-block;")
+                div(style="margin-bottom: 10px;")
+                    b="About company"
+                div
+                    each t in about
+                        a(href='/about-us'): div= t.title
+            div(style="width:33%; display:inline-block")
+                div(style="margin-bottom: 10px")
+                    b="Follow us"
+                each fu in f.social
+                    div
+                        a(href= fu): span= fu
