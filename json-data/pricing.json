@@ -1,26 +1,88 @@
 [
   {
-    "title": "Basic",
-    "planing_price": 25,
-    "programming_price":15 ,
-    "backing_price":10 ,
-    "description1": "As much space as your team needs",
-    "description2": "Sophisticated control and security features"
+    "title" : "Fully Remote",
+    "acronym" : "FR",
+    "days_price" : 250,
+    "months_price" : 4500,
+    "quarters_price" : 11900,
+    "support hours_price" : 20,
+    "support months_price" : 50,
+    "pros" : [
+      "Our most affordable plan",
+      "Ideal for experienced software project managers",
+      "complete with remote control toolset: JIRA, Jenkins and Slack",
+      "Three months free support after handover"
+    ],
+    "cons" : [
+      "Lack of face-to-face communication, except for video chats",
+      "Timezone difference",
+      "Not for the people who are not technically well-versed"
+    ]
+  },
+
+  {
+    "title" : "Leveraged On-site Contract",
+    "acronym" : "LOC",
+    "days_price" : 500,
+    "months_price" : 9000,
+    "quarters_price" : 23900,
+    "support hours_price" : 75,
+    "support months_price" : 200,
+    "pros" : [
+      "Employing an experienced (8+yrs) contractor who leads a remote team of 3 full-time developers",
+      "Engage in architecture and design of software from the beginning",
+      "No communication barrier",
+      "Ideal for green-field projects",
+      "Help to build your own team",
+      "Three months free support after handover"
+    ],
+    "cons" : [
+      "Needs a substantial budget"
+    ]
   },
   {
-    "title": "Standard",
-    "planing_price": 30,
-    "programming_price":20,
-    "backing_price":10,
-    "description1": "Customizable solutions",
-    "description2": "Individualized support to help admins"
+    "title" : "Remote Technical Acceleration",
+    "acronym" : "RTA",
+    "equity_comp" : true,
+    "cash_plan" : "FR",
+    "days_price" : null,
+    "months_price" : 2900,
+    "quarters_price" : 4500,
+    "support hours_price" : 10,
+    "support months_price" : 25,
+    "pros" : [
+      "Less strain on your cash-flow",
+      "Ideal for experienced software project managers",
+      "complete with remote control toolset: JIRA, Jenkins and Slack",
+      "Three months free support after handover"
+    ],
+    "cons" : [
+      "Only for the businesses that WE LIKE TO BE THEIR SHAREHOLDERS",
+      "Timezone difference",
+      "Not for the people who are not technically well-versed"
+    ]
   },
   {
-    "title": "Advanced",
-    "planing_price": 35,
-    "programming_price":25 ,
-    "backing_price":10 ,
-    "description1": "As much space as your team needs",
-    "description2": "Sophisticated control and security features"
+    "title" : "Local Technical Acceleration",
+    "acronym" : "LTA",
+    "equity_comp" : true,
+    "cash_plan" : "LOC",
+    "days_price" : null,
+    "months_price" : 5000,
+    "quarters_price" : 11900,
+    "support hours_price" : 35,
+    "support months_price" : 100,
+    "pros" : [
+      "Less strain on your cash-flow",
+      "Partnership with an experienced (8+yrs) contractor who leads a remote team of 3 full-time developers",
+      "Ideal for start-ups who need an MVP or POC",
+      "No communication barriers",
+      "Attendance and demos in your meetings with investors",
+      "Three months free support after handover"
+    ],
+    "cons" : [
+      "Only for the businesses that WE LIKE TO BE THEIR SHAREHOLDERS",
+      "Needs more budget"
+    ]
   }
 ]

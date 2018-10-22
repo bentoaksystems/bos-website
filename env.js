@@ -81,6 +81,8 @@ if (db_username && db_password) {
   db['password'] = db_password;
 }
 
+db.mongoURI = process.env.MONGODB_URI;
+
 /**
  * Mail Config
  */
