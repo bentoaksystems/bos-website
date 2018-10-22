@@ -151,6 +151,16 @@ router.get('/about-us',
   })
 );
 
+router.get('/pricing',
+  dbCall('header', lib.PageInfo.getHeader),
+  dbCall('pricing', lib.PageInfo.getPricing),
+  dbCall('footer', lib.PageInfo.getFooter),
+  dbCall('about', lib.PageInfo.getAboutUs),
+  templateHandler('pricing', {
+    title : 'Pricing'
+  })
+);
+
 router.get('/contact',
   dbCall('header', lib.PageInfo.getHeader),
   dbCall('footer', lib.PageInfo.getFooter),
