@@ -1,0 +1,22 @@
+doctype html
+html
+    include header.pug
+    head
+        title=title
+        meta(name="keywords")(content="Basic, Standard, Advanced")
+
+    body
+        h1=title
+        div
+            ul
+            each p in pricing
+                li(style="font-weight: bold")=p.title
+                div(style="margin-left: 20px")
+                    description=p.description1
+                    br/
+                    description=p.description2
+                    br/
+                br/
+
+
+            include footer.pug
