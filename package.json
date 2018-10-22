@@ -24,6 +24,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "serve-favicon": "^2.5.0",
+    "sitemap": "^2.1.0",
     "spider-detector": "^1.0.18"
   },
   "devDependencies": {
