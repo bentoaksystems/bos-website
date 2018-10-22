@@ -4,7 +4,7 @@ const schema_obj = {
   title: {
     type: Schema.Types.String,
   },
-  planning_price: {
+  planing_price: {
     type: Schema.Types.String,
   },
   programming_price: {
