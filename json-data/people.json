@@ -56,8 +56,8 @@
         "fullname": "Saman Vaziri",
         "image": "https://avatars1.githubusercontent.com/u/35308248?s=400&v=4",
         "responsibility": "Full-Stack Developer / SEO",
-      "social": {
-      }
+        "social": {
+        }
     },
     {
         "fullname": "Mohammad Ali Farhad",
@@ -66,12 +66,12 @@
         "social": {
         }
     },
-  {
-    "fullname": "Qazal Jalilian",
-    "responsibility": "Intern",
-    "social": {
-      "linkedIn": "https://www.linkedin.com/in/imans77",
-      "github": "https://github.com/imans777"
+    {
+        "fullname": "Qazal Jalilian",
+        "responsibility": "Intern",
+        "social": {
+            "linkedIn": "https://www.linkedin.com/in/imans77",
+            "github": "https://github.com/imans777"
+        }
     }
-  },
 ]
