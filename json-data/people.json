@@ -2,99 +2,68 @@
     {
         "fullname": "Amin Azarbadegan",
         "image": "http://images.ctfassets.net/yati6i04nkb8/4uZusPZA00Qi6g406iYKQM/f3feef1f7d3e5f253743fb2d5375a456/amin_photo.JPG",
-        "email": "amin@azarbadegan.net",
         "responsibility": "Founder / CEO",
         "social": {
             "github": "https://github.com/aminazar",
             "linkedIn":"https://www.linkedin.com/in/aminazar/"
-        },
-        "favorites": "Artificial Life / Encryption",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
     },
     {
         "fullname": "Ehsan Ansari Basir",
         "image": "http://images.ctfassets.net/yati6i04nkb8/6ED3DD38PK64kUAq0YgO0m/1e801dea5b4a5f6061dae197a3538636/photo_2017-09-17_20-28-34.jpg",
-        "email": "eabasir@gmail.com",
         "responsibility": "Technical Manager",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/ehsan-ansari-basir/",
             "github": "https://github.com/eabasir"
-        },
-        "favorites": "Budget Project",
-        "description": "A shorter description to see how it fits in the page and whether it stays inside the placeholder that was defined for it or not"
+        }
     },
     {
-        "fullname": "Mohammad Ali Alavian Ghavanini",
+        "fullname": "Ali Alavian",
         "image": "http://images.ctfassets.net/yati6i04nkb8/3qKTrujM12a6qOyM6Syqmi/5d6615a8b853157d1764e28067239fa5/photo5904684617674369571.jpg",
-        "email": "magavanini@gmail.com",
         "responsibility": "Businuess Consultant",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/mohammad-ali-alavian-ghavanini-804439120/",
             "github": "https://github.com/maghavanini"
-        },
-        "favorites": "Hamburger",
-        "description": "No description is found on this person!"
+        }
     },
     {
         "fullname": "Alireza Hariri",
         "image": "http://images.ctfassets.net/yati6i04nkb8/4WLLW2xAXuwYc4q4Muego4/a7443ed64a9ea6c144b8f1b8bb0e432b/hariri.jpg",
-        "email": "ali.71hariri@gmail.com",
         "responsibility": "Full-stack Developer",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/alireza-hariri-4036459b/",
             "github": "https://github.com/ARHariri"
-        },
-        "favorites": "Coffee",
-        "description": "test description test description test description test description test description test description "
+        }
     },
     {
         "fullname": "Sareh Salehi",
         "image": "http://images.ctfassets.net/yati6i04nkb8/1cKJbbJsgyQWcM8CikiWme/7617ca3ea020754eef349f9e97e9caa0/salehi.jpg",
-        "email": "saresalehi@gmail.com",
         "responsibility": "Full-Stack Developer / Test Automation",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/sareh-salehi-77327572/",
             "github": "https://github.com/ssalehi"
-        },
-        "favorites": "unknown",
-
-        "description": "test description test description test description test description test description "
+        }
     },
     {
         "fullname": "Iman Sahebi",
-        "image": "https://avatars1.githubusercontent.com/u/24255509?s=400&v=4",
-        "email": "iman.s_sani@yahoo.com",
         "responsibility": "Full-stack Developer",
         "social": {
             "linkedIn": "https://www.linkedin.com/in/imans77",
             "github": "https://github.com/imans777"
-        },
-        "favorites": "Technology",
-        "description": "test description test description test description test description test description test description test description test description "
+        }
     },
     {
         "fullname": "Saman Vaziri",
         "image": "https://avatars1.githubusercontent.com/u/35308248?s=400&v=4",
-        "email": "saman.fv@gmail.com",
         "responsibility": "Full-Stack Developer / SEO",
       "social": {
-        "linkedIn": "https://www.linkedin.com/#",
-        "github": "https://github.com/#/"
-      },
-        "favorites": "unknown",
-        "description": "test description test description test description test description test description test description test description test description test description "
+      }
     },
     {
         "fullname": "Mohammad Ali Farhad",
-        "image": "data:image/jpeg;base64,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",
         "email": "mafphp@gmail.com",
         "responsibility": "Full-stack Developer",
         "social": {
-            "github": "github.com/farhad",
-            "linkedIn":"effeff"
-       
-        },
-        "favorites": "devOps",
-        "description": "test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description "
+        }
     }
 ]
