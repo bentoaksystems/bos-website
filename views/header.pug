@@ -1,8 +1,9 @@
 div
     div
         img(src=header[0].logo)
-    div
+    ul
         each tab in header[0].menu_tab
-            a(href=tab.router_link): div= tab.title
+            li
+                a(href=tab.router_link)=tab.title
 
 hr/
