@@ -1,11 +1,6 @@
-doctype html
-html
-    include header.pug
-    head
-        title=title
-        meta(name="keywords")(content="Basic, Standard, Advanced")
+extends layout
 
-    body
+block content
         h1=title
         div
             ul
@@ -16,7 +11,4 @@ html
                     br/
                     description=p.description2
                     br/
-                br/
-
-
-            include footer.pug
+            br/

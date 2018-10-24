@@ -2,5 +2,10 @@ doctype html
 html
   head
     title= title
+    meta(name="keywords")(content= keywords)
+    meta(name="description")(content= descriptions)
+
   body
+    include header.pug
     block content
+    include footer.pug

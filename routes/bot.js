@@ -118,7 +118,9 @@ router.get('/home',
   templateHandler('home', {
     title : 'Bent Oak Systems',
     processTitle: 'Our Process',
-    toolboxTitle: 'Our Toolbox'
+    toolboxTitle: 'Our Toolbox',
+    keywords: 'Bent Oak Systems,web development,CICD,software development,dev ops',
+    descriptions: 'Bent Oak Systems is a software and web development company founded in 2016'
   })
 );
 
@@ -128,7 +130,9 @@ router.get('/projects',
   dbCall('footer', lib.PageInfo.getFooter),
   dbCall('about', lib.PageInfo.getAboutUs),
   templateHandler('projects', {
-    title : 'Our Projects'
+    title : 'Our Projects',
+    keywords: 'Burgista Timesheet,Planning and Budgeting App For Aria Teb,Quran Together App,Dr Mandegar\'s Electronic Medical Record App,Burgista Internal Delivery App',
+    descriptions: 'Bent Oak Systems Projects'
   })
 );
 
@@ -138,7 +142,9 @@ router.get('/people',
   dbCall('footer', lib.PageInfo.getFooter),
   dbCall('about', lib.PageInfo.getAboutUs),
   templateHandler('people', {
-    title : 'People In Bent Oak Systems'
+    title : 'People In Bent Oak Systems',
+    keywords: 'People,bentoak,bent oak',
+    descriptions: 'Bent Oak Systems people'
   })
 );
 
@@ -147,9 +153,12 @@ router.get('/about-us',
   dbCall('footer', lib.PageInfo.getFooter),
   dbCall('about', lib.PageInfo.getAboutUs),
   templateHandler('about-us', {
-    title : 'About Us'
+    title : 'About Us',
+    keywords: 'People,Founder / CEO,Technical Manager,Business Consultant,Full-stack Developer,Test Automation',
+    descriptions: 'About Bent Oak Systems'
   })
 );
+
 
 router.get('/pricing',
   dbCall('header', lib.PageInfo.getHeader),
@@ -157,7 +166,9 @@ router.get('/pricing',
   dbCall('footer', lib.PageInfo.getFooter),
   dbCall('about', lib.PageInfo.getAboutUs),
   templateHandler('pricing', {
-    title : 'Pricing'
+    title : 'Pricing',
+    keywords: 'Fully Remote,Leveraged On-site Contract,Remote Technical Acceleration,Local Technical Acceleration',
+    descriptions: 'Bent Oak Systems Pricing'
   })
 );
 
@@ -166,12 +177,11 @@ router.get('/contact',
   dbCall('footer', lib.PageInfo.getFooter),
   dbCall('about', lib.PageInfo.getAboutUs),
   templateHandler('contact', {
-    title : 'Contact us'
+    title : 'Contact us',
+    keywords: 'contact,bentoak,bent oak',
+    descriptions: 'Contact Bent Oak Systems'
   })
 );
-
-
-
 
 
 module.exports = router;

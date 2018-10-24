@@ -1,11 +1,6 @@
-doctype html
-html
-    include header.pug
-    head
-        title=title
-        meta(name="keywords")(content="Bent Oak Systems, Our Process, Our Toolbox")
+extends layout
 
-    body
+block content
         h1=title
         each slide in topSection
             div
@@ -33,4 +28,3 @@ html
 
         br/
         br/
-        include footer.pug

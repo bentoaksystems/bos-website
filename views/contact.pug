@@ -1,16 +1,10 @@
-doctype html
-html
-    include header.pug
-    head
-        title=title
-        meta(name="keywords")(content="project")
-    body
-        - let fo = footer[0]
-        h1="Get in touch with us"
-        ul
-            li= fo.address
-            li= fo.phone
-            a(href='mailto:' + fo.email)= fo.email
-    hr/
+extends layout
 
-    include footer.pug
+block content
+    - let fo = footer[0]
+    h1="Get in touch with us"
+    ul
+        li= fo.address
+        li= fo.phone
+        a(href='mailto:' + fo.email)= fo.email
+    hr/

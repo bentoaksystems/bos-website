@@ -1,12 +1,6 @@
-doctype html
-html
-    include header.pug
-    head
-        title= title
-        meta(name="keywords")(content="Burgista Timesheet, Planning and Budgeting App For Aria Teb, Quran Together App, " +
-        "\n" +
-        "Dr Mandegar's Electronic Medical Record App, Burgista Internal Delivery App")
-        body
+extends layout
+
+block content
             h1= title
             ul
             each project in projects
@@ -14,4 +8,3 @@ html
                 img(src=project.mainImage.url)(alt="top image")(style="width: 150px; height: 150px")
                 h4= project.shortDescription
                 hr/
-        include footer.pug
