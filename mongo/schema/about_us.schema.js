@@ -4,7 +4,7 @@ const schema_obj = {
   title: {
     type: Schema.Types.String,
     trim: true,
-    required: true,
+    // required: true,
   },
   background: {
     type: Schema.Types.String,

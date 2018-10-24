@@ -1,6 +1,7 @@
 const Schema = require('mongoose').Schema;
 
 const schema_obj = {
+  type: Schema.Types.Mixed
 };
 
 
