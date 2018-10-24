@@ -23,5 +23,11 @@
     "title": "Technical Support",
     "background": "assets/images/technical-support.png",
     "description": "Software ages like the live beasts, and without well-thought prospect of training, support, maintenance and occasional upgrades, it will die soon, or worse, it will be stillborn.\n\nThe product launch day is the end of an intense development period for the programmers, but it is just the first day of 'release to production', when the product owner starts using it and usually needs 24/7 support. \n\nWe offer an Server Level Agreement **(SLA)** to our clients: the support starts with training, to help the owner understand and become skillful in using the new tool.\n\nIt continues with active monitoring of the servers. An open channel is designated for the client to send feedbacks in form of bug-reporting or request of new features, and push-buttons to sound the sirens for the costly incidents like server failures and possible data loss or leaks.\n\nThe channels are complimented with phone-calls, on-screen sessions, on-site presence and face to face chats to understand the issue and resolve it faster.\n\nWe take support of our products seriously. The development job is a long-term commitment, so we write the code and error-handling to be supportable and clear to solve. We test the code under simulations of the real use cases, to make sure it is okay - but as long as there is code, there is bug and issues, and they must be addressed as rigorously - if not more."
+  },
+  {
+    "meta": {
+      "keywords": "Bent Oak Systems,CI/CD,Web Development,Software Development,Technical Support",
+      "descriptions": "About Bent Oak Systems"
+    }
   }
 ]

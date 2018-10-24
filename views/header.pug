@@ -1,11 +1,8 @@
-doctype html
-html
-    body
-        div
-            div(style="text-align: left; display: inline-block; width: 50% ")
-                img(src=header[0].logo)(style="width: 5%; height: 5%")
-            div(style="text-align: right; display: inline-block; width: 50% ")
-                each tab in header[0].menu_tab
-                    a(href=tab.router_link): div(style="margin-left: 8px; display: inline-block; text-decoration: underline !important;")= tab.title
+div
+    div(style="text-align: left; display: inline-block; width: 50% ")
+        img(src=header[0].logo)(style="width: 5%; height: 5%")
+    div(style="text-align: right; display: inline-block; width: 50% ")
+        each tab in header[0].menu_tab
+            a(href=tab.router_link): div(style="margin-left: 8px; display: inline-block; text-decoration: underline !important;")= tab.title
 
-        hr/
+hr/

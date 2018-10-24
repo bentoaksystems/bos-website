@@ -11,6 +11,9 @@ const schema_obj = {
   },
   description: {
     type: Schema.Types.String,
+  },
+  meta: {
+    type: Schema.Types.Mixed
   }
 };
 
