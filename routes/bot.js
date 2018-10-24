@@ -120,7 +120,8 @@ router.get('/home',
     processTitle: 'Our Process',
     toolboxTitle: 'Our Toolbox',
     keywords: 'Bent Oak Systems,web development,CICD,software development,dev ops',
-    descriptions: 'Bent Oak Systems is a software and web development company founded in 2016'
+    descriptions: 'Bent Oak Systems is a software and web development company founded in 2016',
+    viewport: 'width=device-width, initial-scale=1'
   })
 );
 
@@ -132,7 +133,8 @@ router.get('/projects',
   templateHandler('projects', {
     title : 'Our Projects',
     keywords: 'Burgista Timesheet,Planning and Budgeting App For Aria Teb,Quran Together App,Dr Mandegar\'s Electronic Medical Record App,Burgista Internal Delivery App',
-    descriptions: 'Bent Oak Systems Projects'
+    descriptions: 'Bent Oak Systems Projects',
+    viewport: 'width=device-width, initial-scale=1'
   })
 );
 
@@ -144,7 +146,8 @@ router.get('/people',
   templateHandler('people', {
     title : 'People In Bent Oak Systems',
     keywords: 'People,bentoak,bent oak',
-    descriptions: 'Bent Oak Systems people'
+    descriptions: 'Bent Oak Systems people',
+    viewport: 'width=device-width, initial-scale=1'
   })
 );
 
@@ -155,7 +158,8 @@ router.get('/about-us',
   templateHandler('about-us', {
     title : 'About Us',
     keywords: 'People,Founder / CEO,Technical Manager,Business Consultant,Full-stack Developer,Test Automation',
-    descriptions: 'About Bent Oak Systems'
+    descriptions: 'About Bent Oak Systems',
+    viewport: 'width=device-width, initial-scale=1'
   })
 );
 
@@ -168,7 +172,8 @@ router.get('/pricing',
   templateHandler('pricing', {
     title : 'Pricing',
     keywords: 'Fully Remote,Leveraged On-site Contract,Remote Technical Acceleration,Local Technical Acceleration',
-    descriptions: 'Bent Oak Systems Pricing'
+    descriptions: 'Bent Oak Systems Pricing',
+    viewport: 'width=device-width, initial-scale=1'
   })
 );
 
@@ -179,7 +184,8 @@ router.get('/contact',
   templateHandler('contact', {
     title : 'Contact us',
     keywords: 'contact,bentoak,bent oak',
-    descriptions: 'Contact Bent Oak Systems'
+    descriptions: 'Contact Bent Oak Systems',
+    viewport: 'width=device-width, initial-scale=1'
   })
 );
 
