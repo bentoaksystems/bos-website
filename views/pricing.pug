@@ -3,12 +3,17 @@ extends layout
 block content
         h1=title
         div
-            ul
             each p in pricing
-                li(style="font-weight: bold")=p.title
-                div(style="margin-left: 20px")
-                    description=p.description1
-                    br/
-                    description=p.description2
-                    br/
-            br/
+                h2=`${p.title} (${p.acronym})`
+                ul
+                    each x,i in p
+                        if i.includes('_price')
+                            li=i.replace(/_/g, ' ').replace(/s /, 'ly ').replace(/dayly /, 'daily ') + ': £' +x
+                        else if ['__v','_id'].includes(i)
+                            span=''
+                        else if ['pros','cons'].includes(i)
+                            li
+                                h2=i
+                                ul
+                                    each y in x
+                                        li=y
