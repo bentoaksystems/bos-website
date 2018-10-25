@@ -26,12 +26,13 @@ app.use(cookieParser());
 
 app.use(detector.middleware());
 
-app.use('/', index);
 // this router is for google bots and spiders to be tricked
 // NOTE: use 'User-Agent Switcher' chrome extension on port 4000 to see these
 app.use('/', bot);
-app.use('/api', api);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', index);
+app.use('/api', api);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

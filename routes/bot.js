@@ -1,6 +1,5 @@
-var express = require('express');
-var router = express.Router();
-
+const express = require('express');
+const router = express.Router();
 const lib = require('../lib');
 
 /**
@@ -64,11 +63,13 @@ function dbCall(field, func) {
  * @returns
  */
 function templateHandler(templateName, parameters = {}) {
-  return ((req, res) => {
-    res.render(templateName, Object.assign(
-      req.data || {},
-      parameters
-    ));
+  return ((req, res, next) => {
+    if (req.isSpider()) {
+      res.render(templateName, Object.assign(
+        req.data || {},
+        parameters
+      ));
+    } else next();
   });
 }
 
