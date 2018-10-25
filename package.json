@@ -29,9 +29,7 @@
     "spider-detector": "^1.0.18"
   },
   "devDependencies": {
-    "growl": "^1.10.5",
     "jasmine": "^3.2.0",
-    "jasmine-node": "^2.0.1",
     "jasmine-spec-reporter": "^4.2.1"
   }
 }
