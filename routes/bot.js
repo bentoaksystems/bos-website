@@ -95,7 +95,9 @@ router.get('/footer',
   dbCall('about', lib.PageInfo.getAboutUs),
   templateHandler('footer', {})
 );
-router.get('/', dbCall('header', lib.PageInfo.getHeader),
+
+router.get('/',
+  dbCall('header', lib.PageInfo.getHeader),
   dbCall('topSection', lib.PageInfo.getHomeTopSection),
   dbCall('ourProcess', lib.PageInfo.getProcess),
   dbCall('toolbox', lib.PageInfo.getTechnology),
