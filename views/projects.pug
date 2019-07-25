@@ -1,0 +1,10 @@
+extends layout
+
+block content
+            h1= title
+            ul
+            each project in projects
+                h2= project.title
+                img(src=project.mainImage.url)(alt="top image")(style="width: 150px; height: 150px")
+                h4= project.shortDescription
+                hr/

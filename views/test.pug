@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="keywords")(content="Bent Oak Systems, Software, development")
+  body
+    h1=title
+    p= '"title" is a value sent in parameters to pug:'
+    h2 Bent Oak Systems
+    h3(style="text-align: center;") This is just a general example on How to use Pug with different parameters, variables, etc.
+    p this is header iterated menu tabs with custom links and titles in an unordered list:
+    ul
+      each tab in header[0].menu_tab
+        a(href=tab.router_link): li= tab.title
+
+    hr/
+    p test image:
+    img(src=top_section[1].backgroundPic)(alt="top image")(style="max-width: 80vw;")
+    hr/
+    p this is footer, which the we defined 'f' variable to use that instead of 'footer[0]':
+    - let f = footer[0]
+    p address in bold: 
+      b= f.address
+    p= 'full email: '
+      a(href='mailto:' + f.email)= 'click to send email'
+    if f.title == 'footer contents'
+      p= 'this is footer content!'
+    
+    if true == true
+      p= 'example of if!'
+    
+    if true != true
+      p= 'should not be shown!'
+    else
+      p= 'example of else!'
+
+    unless true != true
+      p= 'example of unless!'
+

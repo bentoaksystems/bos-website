@@ -2,21 +2,16 @@ var express = require('express');
 var router = express.Router();
 const path = require('path');
 
-/* Diverting unknown routes to Angular router */
-router.all("*", function (req, res, next) {
+/* Diverting unknown user routes to Angular router */
+router.all("*", (req, res, next) => {
   /* Redirect http to https */
-  if (req.originalUrl.indexOf('api') === -1) {
+  if (!req.originalUrl.startsWith('/api') && !req.isSpider()) {
     console.log('[TRACE] Server 404 request: ' + req.originalUrl);
     var p = path.join(__dirname, '../public', 'index.html').replace(/\/routes\//, '/');
     res.status(200).sendFile(p);
-  }
-  else
+  } else {
     next();
-});
-
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', {title: 'Express'});
+  }
 });
 
 

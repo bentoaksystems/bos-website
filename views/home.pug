@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    h1=title
+    each slide in topSection
+        div
+             a(href='/about-us')=slide.title
+             description=slide.intro
+             img(src=slide.backgroundPic)
+        hr/
+
+    h2=processTitle
+    ul
+    each pro in ourProcess
+        li=pro.title
+        p=pro.description
+    hr/
+
+    h2=toolboxTitle
+    each tool in toolbox
+        a(herf=tool.url)
+            h3=tool.title
+        img(src=tool.file.url)(alt=tool.title)

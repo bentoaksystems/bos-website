@@ -4,8 +4,7 @@ mongoose.Promise = require('bluebird');
 
 let dbIsReady = () => {
   let dbConnection = new Promise((resolve, reject) => {
-    function connect() {
-      console.log(`-> Mongoose connecting to '${env.db.name}' at '${env.db.uri}'...`);
+    function connect(i = 0) {
       const connection = mongoose.createConnection(getDBCompleteURI(env.db), {useNewUrlParser: true});
       connection.on('connected', function () {
         console.log(`-> Mongoose ${env.isTest ? 'test ' : ''}has been connected!`);
@@ -14,7 +13,12 @@ let dbIsReady = () => {
       connection.on('error', function (err) {
         console.error('-> Mongoose connection error: ', err);
         console.log('Reconnecting mongoose...');
-        setTimeout(connect, 1000);
+        if (i < 300) {
+          setTimeout(() => connect(i + 1), 1000);
+        } else {
+          console.error('failed after 300 retries');
+          reject(err);
+        }
       });
     }
     connect();
@@ -28,6 +32,9 @@ let dbIsReady = () => {
 }
 
 function getDBCompleteURI(db) {
+  if (db.mongoURI)
+    return db.mongoURI;
+
   if (db.username && db.password)
     return `mongodb://${db.username}:${db.password}@${db.uri}/${db.name}`;
   return `mongodb://${db.uri}/${db.name}`;

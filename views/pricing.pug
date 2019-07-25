@@ -1,0 +1,19 @@
+extends layout
+
+block content
+        h1=title
+        div
+            each p in pricing
+                h2=`${p.title} (${p.acronym})`
+                ul
+                    each x,i in p
+                        if i.includes('_price')
+                            li=i.replace(/_/g, ' ').replace(/s /, 'ly ').replace(/dayly /, 'daily ') + ': £' +x
+                        else if ['__v','_id'].includes(i)
+                            span=''
+                        else if ['pros','cons'].includes(i)
+                            li
+                                h2=i
+                                ul
+                                    each y in x
+                                        li=y

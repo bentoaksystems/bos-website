@@ -1,0 +1,9 @@
+div
+    div
+        img(src=header[0].logo)
+    ul
+        each tab in header[0].menu_tab
+            li
+                a(href='https://bentoak.systems' + tab.router_link)=tab.title
+
+hr/

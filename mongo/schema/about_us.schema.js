@@ -4,13 +4,16 @@ const schema_obj = {
   title: {
     type: Schema.Types.String,
     trim: true,
-    required: true,
+    // required: true,
   },
   background: {
     type: Schema.Types.String,
   },
   description: {
     type: Schema.Types.String,
+  },
+  meta: {
+    type: Schema.Types.Mixed
   }
 };
 

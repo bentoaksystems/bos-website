@@ -1,14 +1,13 @@
 [
   {
-    "address": "Unit 13 - No. 18 - Dr.Fathi Shaghaghi",
-    "email": "info@bentoak.systems",
+    "address": "27 Dicey Avenue, London NW2 6AR, UK",
+    "email": "amin@bentoak.systems",
     "social": {
       "linkedin": "https://www.linkedin.com/company-beta/18228521",
-      "facebook": "#",
-      "github": "#",
-      "google": "#"
+      "github": "https://github.com/bentoaksystems",
+      "slack": "https://bentoaksystems.slack.com"
     },
-    "phone": "+4420 81 4420 31",
+    "phone": "+4420814 42031",
     "title": "footer contents"
   }
 ]
