@@ -11,6 +11,45 @@
       }
     },
     {
+      "name": "Dutch",
+      "direction": "ltr",
+      "locale_symbol": "en",
+      "default": false,
+      "keywords": {
+        "We shape your business ideas into reality and offer solutions which add value to your business.": "",
+        "We create innovative & attractive web design with great functionality to engage web traffic.": "",
+        "Technical Manager": "",
+        "Next": "",
+        "End": "",
+        "Our Process": "",
+        "Our Toolbox": "",
+        "Ready to start a project?": "",
+        "Your name": "",
+        "Your phone number": "",
+        "Content": "",
+        "Send your message": "",
+        "Get in touch with us": "",
+        "About us": "",
+        "Software Development": "",
+        "Web Development": "",
+        "Technical Support": "",
+        "© 2018 Bent Oak Systems. All rights reserved.": "",
+        "Show Less": "",
+        "Show More": "",
+        "Who we are": "",
+        "LinkedIn Profile": "",
+        "Pros/Cons": "",
+        "Pricing": "",
+        "Total cash price": "",
+        "Total equity comp.": "",
+        "Contact us to start": "",
+        "Cost": "",
+        "Our Projects": "",
+        "All projects": "",
+        "More...": ""
+      }
+    },
+    {
       "name": "Persian",
       "direction": "rtl",
       "locale_symbol": "fa",
@@ -18,17 +57,6 @@
       "keywords": {
         "id": "شناسه",
         "info": "اطلاعات"
-      }
-    },
-    {
-      "name": "Dutch",
-      "direction": "ltr",
-      "locale_symbol": "en",
-      "default": false,
-      "keywords": {
-        "We shape your business ideas into reality and offer solutions which add value to your business.": "translate one",
-        "We create innovative & attractive web design with great functionality to engage web traffic.": "translate two",
-        "Technical Manager": "translate three"
       }
     },
     {
