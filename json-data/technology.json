@@ -82,7 +82,7 @@
   {
     "title": "Jira Software ",
     "url": "https://www.atlassian.com/software/jira",
-    "description": " Jira Software is an agile project management tool that supports any agile methodology, be it scrum, kanban, or your own unique flavor.",
+    "description": "Jira Software is an agile project management tool that supports any agile methodology, be it scrum, kanban, or your own unique flavor.",
     "file": {
       "contentType": "image/png",
       "fileName": "Jira Software",
@@ -102,7 +102,7 @@
   {
     "title": "Git",
     "url": "https://git-scm.com",
-    "description": " Git is a free and open source distributed version control system designed to handle everything in most projects with speed and efficiency.",
+    "description": "Git is a free and open source distributed version control system designed to handle everything in most projects with speed and efficiency.",
     "file": {
       "contentType": "image/png",
       "fileName": "Git",
@@ -112,7 +112,7 @@
   {
     "title": "Slack",
     "url": "https://slack.com",
-    "description": " Slack is a place where your team comes together to collaborate, important information can be found by the right people..",
+    "description": "Slack is a place where your team comes together to collaborate, important information can be found by the right people..",
     "file": {
       "contentType": "image/png",
       "fileName": "Slack",
@@ -123,7 +123,7 @@
   {
     "title": "Heroku",
     "url": "https://www.heroku.com/home",
-    "description": " Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps, we're the fastest way to go from idea to URL.",
+    "description": "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps, we're the fastest way to go from idea to URL.",
     "file": {
       "contentType": "image/png",
       "fileName": "Heroku",
