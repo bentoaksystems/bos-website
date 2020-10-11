@@ -1,4 +1,5 @@
 const db = require('./mongo');
+const fs = require('fs');
 const models = require('./mongo/models.mongo');
 const dbHelpers = require('./lib/db-helpers');
 
@@ -26,6 +27,27 @@ modelIsReady()
         return models()[el].insertMany(jsons[el]);
       }
     }));
+  })
+  .then(async () => {
+    /**
+     * add dictionary json
+     */
+    const dictionaries = JSON.parse(fs.readFileSync('dictionary.json', 'utf8'));
+    // keywords:{id: 'شناسه', info: 'اطلاعات'}
+    for (let index = 0; index < dictionaries.length; index++) {
+      const dictionary = dictionaries[index];
+      const keywords = Object.entries(dictionary['keywords']).map((e) => ( { key_word: e[0], value: e[1] } ));
+      await models()['DictionaryLocation'].updateOne({name: dictionary['name']}, {
+        name: dictionary['name'],
+        direction: dictionary['direction'],
+        default: dictionary['default'],
+        locale_symbol: dictionary['locale_symbol'],
+        keywords: keywords
+      }, {upsert: true});
+    }
+
+
+    console.log('-> dictionary json updated');
   })
   .then(res => {
     console.log('-> all jsons have been added successfully!');

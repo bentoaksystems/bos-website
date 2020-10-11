@@ -1,0 +1,45 @@
+[
+    {
+      "name": "English",
+      "direction": "ltr",
+      "locale_symbol": "en",
+      "default": true,
+      "keywords": {
+        "id": "id",
+        "info": "info",
+        "We shape your business ideas into reality and offer solutions which add value to your business.": "We shape your business ideas into reality and offer solutions which add value to your business"
+      }
+    },
+    {
+      "name": "Persian",
+      "direction": "rtl",
+      "locale_symbol": "fa",
+      "default": false,
+      "keywords": {
+        "id": "شناسه",
+        "info": "اطلاعات"
+      }
+    },
+    {
+      "name": "Dutch",
+      "direction": "ltr",
+      "locale_symbol": "en",
+      "default": false,
+      "keywords": {
+        "We shape your business ideas into reality and offer solutions which add value to your business.": "translate one",
+        "We create innovative & attractive web design with great functionality to engage web traffic.": "translate two",
+        "Technical Manager": "translate three"
+      }
+    },
+    {
+      "name": "German",
+      "direction": "ltr",
+      "locale_symbol": "en",
+      "default": false,
+      "keywords": {
+        "username": "",
+        "password": ""
+      }
+    }
+  ]
+  
