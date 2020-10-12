@@ -4,6 +4,7 @@
     "displayName": "Burgista Timesheet",
     "shortDescription": "Web-based timesheet",
     "title": "Burgista Timesheet",
+    "only_iran": false,
     "mainImage": {
       "contentType": "image/jpeg",
       "fileName": "burgista.jpeg",
@@ -17,6 +18,7 @@
     "link": "-",
     "shortDescription": "Financial Planning and Diversion Detection",
     "title": "Burgista Timesheet",
+    "only_iran": true,
     "mainImage": {
       "contentType":"image/png",
       "fileName": "logo-top-new.png",
@@ -30,6 +32,7 @@
     "link": "-",
     "shortDescription": "Social reading of Quran, on iOS and Android",
     "title": "Quran",
+    "only_iran": true,
     "mainImage": {
       "contentType": "image/png",
       "fileName": "drawable-xxxhdpi-icon.png",
@@ -43,6 +46,7 @@
     "link": "-",
     "shortDescription": "Electronic Medical Records",
     "title": "Matab",
+    "only_iran": true,
     "mainImage": {
       "contentType": "image/png",
       "fileName": "logo-wide.png",
@@ -56,6 +60,7 @@
     "link": "-",
     "shortDescription": "Inventory and delivery management for a gourmet fast-food chain",
     "title": "Burgista Timesheet",
+    "only_iran": false,
     "mainImage": {
       "contentType": "image/jpeg",
       "fileName": "burgista.jpeg",
