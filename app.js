@@ -28,10 +28,10 @@ app.use(cookieParser());
 
 app.use(detector.middleware());
 
+// Identify Which ip visit our site !!
 app.use((req, res, next) => {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   const geo = geoip.lookup(ip);
-  console.log('ip visited => ', ip, geo && geo.country);
   req.is_iran = false;
   if (geo && geo.country === 'IR') {
     req.is_iran = true
