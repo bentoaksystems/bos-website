@@ -5,7 +5,7 @@
     "intro": "Bent Oak Systems was founded in summer 2016 in London, UK."
   },
   {
-    "backgroundPic": "assets/images/CICD.jpg",
+    "backgroundPic": "assets/images/CICD.png",
     "title": "CI/CD",
     "intro": "We are committed to Continuous Integration: to keep code integrity with a multi-branch (git) repository."
   },
