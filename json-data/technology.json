@@ -86,7 +86,7 @@
     "file": {
       "contentType": "image/png",
       "fileName": "Jira Software",
-      "url": "https://marketplace.brainwavegrc.com/wp-content/uploads/bw_store_facet_images/bw_jira_activities_icon-900x0.png"
+      "url": "assets/images/atlassian.webp"
     }
   },
   {
@@ -116,7 +116,7 @@
     "file": {
       "contentType": "image/png",
       "fileName": "Slack",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdvrsK0vhbYdQEU7P2mN2LkM0Cgfh3S9D17a4BYUvL7uRQJRb4"
+      "url": "assets/images/slack.svg"
 
     }
   },
@@ -127,7 +127,7 @@
     "file": {
       "contentType": "image/png",
       "fileName": "Heroku",
-      "url": "https://d1oxzbw21neycm.cloudfront.net/assets/service-thumbnails/Heroku.png"
+      "url": "assets/images/heroku.svg"
 
     }
   }

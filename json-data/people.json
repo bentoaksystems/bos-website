@@ -1,7 +1,7 @@
 [
   {
     "fullname": "Amin Azarbadegan",
-    "image": "assets/images/Amin Azarbadegan.JPG",
+    "image": "assets/images/male-avatar.png",
     "responsibility": "Founder / CEO",
     "social": {
       "github": "https://github.com/aminazar",
@@ -10,74 +10,74 @@
   },
   {
     "fullname": "Ehsan Ansari Basir",
-    "image" : "assets/images/Ehsan Ansari Basir.jpg",
+    "image" : "assets/images/male-avatar.png",
     "responsibility": "Technical Manager",
     "social": {
-      "linkedIn": "https://www.linkedin.com/in/ehsan-ansari-basir/",
-      "github": "https://github.com/eabasir"
+      "github": "https://github.com/eabasir",
+      "linkedIn": "https://www.linkedin.com/in/ehsan-ansari-basir/"
     }
   },
   {
     "fullname": "Ali Alavian",
-    "image" : "assets/images/Ali Alavian.jpg",
+    "image" : "assets/images/male-avatar.png",
     "responsibility": "Business Consultant",
     "social": {
-      "linkedIn": "https://www.linkedin.com/in/mohammad-ali-alavian-ghavanini-804439120/",
-      "github": "https://github.com/maghavanini"
+      "github": "https://github.com/maghavanini",
+      "linkedIn": "https://www.linkedin.com/in/mohammad-ali-alavian-ghavanini-804439120/"
     }
   },
   {
     "fullname": "Alireza Hariri",
-    "image" : "assets/images/Alireza Hariri.jpg",
+    "image" : "assets/images/male-avatar.png",
     "responsibility": "Full-stack Developer",
     "social": {
-      "linkedIn": "https://www.linkedin.com/in/alireza-hariri-4036459b/",
-      "github": "https://github.com/ARHariri"
+      "github": "https://github.com/ARHariri",
+      "linkedIn": "https://www.linkedin.com/in/alireza-hariri-4036459b/"
     }
   },
   {
     "fullname": "Sareh Salehi",
-    "image" : "assets/images/Sareh Salehi.jpg",
+    "image" : "assets/images/female-avatar.png",
     "responsibility": "Full-Stack Developer / Test Automation",
     "social": {
-      "linkedIn": "https://www.linkedin.com/in/sareh-salehi-77327572/",
-      "github": "https://github.com/ssalehi"
+      "github": "https://github.com/ssalehi",
+      "linkedIn": "https://www.linkedin.com/in/sareh-salehi-77327572/"
     }
   },
   {
     "fullname": "Iman Sahebi",
     "responsibility": "Full-stack Developer",
-    "image" : "assets/images/Iman Sahebi.jpg",
+    "image" : "assets/images/male-avatar.png",
     "social": {
-      "linkedIn": "https://www.linkedin.com/in/imans77",
-      "github": "https://github.com/imans777"
+      "github": "https://github.com/imans777",
+      "linkedIn": "https://www.linkedin.com/in/imans77"
     }
   },
   {
     "fullname": "Saman Vaziri",
-    "image": "https://avatars1.githubusercontent.com/u/35308248?s=400&v=4",
+    "image": "assets/images/male-avatar.png",
     "responsibility": "Full-Stack Developer / SEO",
     "social": {
-      "linkedIn": " https://www.linkedin.com/in/saman-vaziri-6037a253/",
-      "github" : "https://github.com/samanvaziri"
+      "github" : "https://github.com/samanvaziri",
+      "linkedIn": " https://www.linkedin.com/in/saman-vaziri-6037a253/"
     }
   },
   {
     "fullname": "Mohammad Ali Farhad",
-    "image" : "assets/images/Mohammad Ali Farhad.jpg",
+    "image" : "assets/images/male-avatar.png",
     "responsibility": "Full-stack Developer",
     "social" : {
-      "linkedIn": "",
-      "github": "https://github.com/mafphp"
+      "github": "https://github.com/mafphp",
+      "linkedIn": "https://www.linkedin.com/in/mohammadali-farhad-18b051178/"
     }
   },
   {
     "fullname": "Qazal Jalilian",
-    "image" : "assets/images/Qazal Jalilian.jpg",
+    "image" : "assets/images/female-avatar.png",
     "responsibility": "Intern",
     "social": {
-      "linkedIn" : "https://www.linkedin.com/in/ghazal-jl-7775a8a0/",
-      "github" : "https://github.com/qazaljalilian"
+      "github" : "https://github.com/qazaljalilian",
+      "linkedIn" : "https://www.linkedin.com/in/ghazal-jl-7775a8a0/"
     }
   }
 ]
