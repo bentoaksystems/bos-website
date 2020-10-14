@@ -8,6 +8,10 @@ var debug = require('debug')('bos-website:server');
 var http = require('http');
 const env = require('../env');
 const port = normalizePort(env.port || '4000');
+const https = require('https');
+const fs = require('fs');
+const privateKey  = fs.readFileSync('sslcert/server.key', 'utf8');
+const certificate = fs.readFileSync('sslcert/server.crt', 'utf8');
 
 let app, server;
 appWaiter = setInterval(() => {
@@ -19,7 +23,8 @@ appWaiter = setInterval(() => {
   /*
    * Create Http Server
    */
-  server = http.createServer(app);
+  const credentials = {key: privateKey, cert: certificate};
+  server = https.createServer(credentials, app);
 
   /*
   * Listen on provided port, on all network interface.

@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const compression = require('compression');
 const detector = require('spider-detector');
 const geoip = require('geoip-lite');
+const {isProd} = require('./env');
 
 
 const index = require('./routes/index');
@@ -28,6 +29,18 @@ app.use(cookieParser());
 
 app.use(detector.middleware());
 
+if (isProd) {
+  app.enable('trust proxy');
+  app.use(function (req, res, next) {
+      if (req.secure) {
+          // https request, nothing to handle
+          next();
+      } else {
+          // this is an http request, redirect to https
+          res.redirect(200, 'https://' + req.headers.host + req.url);   
+      }
+  });
+}
 // Identify Which ip visit our site !!
 app.use((req, res, next) => {
   const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
@@ -37,7 +50,7 @@ app.use((req, res, next) => {
     req.is_iran = true
   }
   next();
-})
+});
 // this router is for google bots and spiders to be tricked
 // NOTE: use 'User-Agent Switcher' chrome extension on port 4000 to see these
 app.use('/', bot);
