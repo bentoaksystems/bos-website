@@ -11,6 +11,7 @@ let schemas = {
   ProjectSchema: require('./schema/project.schema'),
   TechnologySchema: require('./schema/technology.schema'),
   DictionaryLocationSchema: require('./schema/dictionary_location.schema'),
+  MailSchema: require('./schema/mail.schema'),
 };
 
 // can save data out of schema using strict: false
