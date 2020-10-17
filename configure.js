@@ -18,7 +18,11 @@ const jsons = {
 modelIsReady()
   .then(res => {
     // forcely drop all in database
-    return dbHelpers.dropAll(true);
+    // return dbHelpers.dropAll(true);
+    return Promise.all(Object.keys(models()).filter(x => x !== 'Mail').map(el => {
+        console.log(`-> '${el}' dropped`);
+        return models()[el].collection.drop();
+    }));
   })
   .then(res => {
     return Promise.all(Object.keys(models()).map(el => {

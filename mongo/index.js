@@ -41,5 +41,6 @@ function getDBCompleteURI(db) {
 }
 
 module.exports = {
-  dbIsReady
+  dbIsReady,
+  mongoose
 };
