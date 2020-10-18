@@ -21,24 +21,27 @@ appWaiter = setInterval(() => {
   /*
    * Create Http Server
    */
-  var options = {
-    key: fs.readFileSync('./ssl/privatekey.pem'),
-    cert: fs.readFileSync('./ssl/certificate.pem'),
-  };
-  server = https.createServer(options, app);
-  http.createServer(function (req, res) {
-    let host = req.headers['host'];
-    if (!env.isProd) {
-      host = 'localhost';
-    }
-    res.writeHead(301, { "Location": "https://" + host + req.url });
-    res.end();
-  }).listen(port);
+
+  if (env.isProd) {
+    var options = {
+      key: fs.readFileSync('/etc/letsencrypt/live/bentoak.systems/privkey.pem'),
+      cert: fs.readFileSync('/etc/letsencrypt/live/bentoak.systems/fullchain.pem'),
+    };
+    server = https.createServer(options, app);
+    http.createServer(function (req, res) {
+      res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+      res.end();
+    }).listen(port);
+    server.listen(443);
+  } else {
+    server = http.createServer(app);
+    server.listen(port);
+
+  }
 
   /*
   * Listen on provided port, on all network interface.
   */
-  server.listen(443);
   server.on('error', onError);
   server.on('listening', onListening);
 }, 100);
