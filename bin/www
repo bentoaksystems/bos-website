@@ -24,8 +24,8 @@ appWaiter = setInterval(() => {
 
   if (env.isProd) {
     var options = {
-      key: fs.readFileSync('/ssl/bentoak.systems.key'),
-      cert: fs.readFileSync('/ssl/bentoak.systems.crt'),
+      key: fs.readFileSync('/cert/bentoak.systems.key'),
+      cert: fs.readFileSync('/cert/bentoak.systems.crt'),
     };
     server = https.createServer(options, app);
     http.createServer(function (req, res) {
