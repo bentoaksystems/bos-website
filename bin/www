@@ -24,8 +24,8 @@ appWaiter = setInterval(() => {
 
   if (env.isProd) {
     var options = {
-      key: fs.readFileSync('/etc/letsencrypt/live/bentoak.systems/privkey.pem'),
-      cert: fs.readFileSync('/etc/letsencrypt/live/bentoak.systems/fullchain.pem'),
+      key: fs.readFileSync('/ssl/key.pem'),
+      cert: fs.readFileSync('/ssl/cert.pem'),
     };
     server = https.createServer(options, app);
     http.createServer(function (req, res) {
