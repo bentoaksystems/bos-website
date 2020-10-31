@@ -12,7 +12,10 @@ div(style="background-color: grey; color: white; padding : 10px")
             b=aboutSection
         div
             each t in about
-                a(href='/about-us'): div= t.title
+                if language==='English'
+                    a(href='/en/about-us'): div= t.title
+                else if language==='German'
+                    a(href='/de/about-us'): div= t.title
     div(style="width:33%; display:inline-block")
         div(style="margin-bottom: 10px")
             b=socialSection

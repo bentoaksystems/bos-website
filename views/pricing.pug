@@ -1,6 +1,10 @@
 extends layout
 
 block content
+        if language === 'English'
+            a(href='/de/pricing')='Pricing'
+        else if language === 'German'
+            a(href='/en/pricing')='Preisgestaltung'
         h1=title
         div
             each p in pricing
@@ -8,7 +12,7 @@ block content
                 ul
                     each x,i in p
                         if i.includes('_price')
-                            if title==='Preisgestaltung'
+                            if language==='German'
                                 if i==='days_price'
                                     li=i.replace('days_price', 'Tägliche Kosten') + ': £' + x
                                 if i==='months_price'
@@ -19,7 +23,7 @@ block content
                                     li=i.replace('support hours_price', 'Stündliche Supportkosten') + ': £' + x
                                 if i==='support months_price'
                                     li=i.replace('support months_price', 'Monatliche Supportkosten') + ': £' + x
-                            else    
+                            else if language==='English'   
                                 li=i.replace(/_/g, ' ').replace(/s /, 'ly ').replace(/dayly /, 'daily ') + ': £' +x
                         else if ['__v','_id'].includes(i)
                             span=''

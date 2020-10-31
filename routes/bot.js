@@ -9,12 +9,6 @@ footer_items_en = {
   socialSection: 'Follow us',
 };
 
-footer_items_de = {
-  contactSection: helpers.translateBaseOnLanguage('German', footer_items_en.contactSection),
-  aboutSection: helpers.translateBaseOnLanguage('German', footer_items_en.aboutSection),
-  socialSection: helpers.translateBaseOnLanguage('German', footer_items_en.socialSection),
-}
-
 /**
  * This middleware can be used as much as needed,
  * it puts db datas from the result of 'func' function
@@ -78,8 +72,14 @@ function dbCall(field, func) {
 function templateHandler(templateName, parameters = {}) {
   return ((req, res, next) => {
     if (req.isSpider()) { 
-      if (req.url.includes('/en/')) lang = 'English';
-      else if (req.url.includes('/de/')) lang = 'German';
+      if (req.params.lang === 'en') {
+        lang = 'English';
+        req.data = {...req.data, ...{language: lang}};
+      }
+      else if (req.params.lang === 'de'){
+        lang = 'German';
+        req.data = {...req.data, ...{language: lang}};
+      }
       Object.keys(req.data).forEach(section => {
         switch (section) {
           case 'header':
@@ -110,14 +110,25 @@ function templateHandler(templateName, parameters = {}) {
             break;
         }
       });
+      let paramsCopy = trlParams(parameters, lang);
       res.render(templateName, Object.assign(
         req.data || {},
-        parameters
+        paramsCopy
       ));
     } else next();
   });
 }
 
+function trlParams(parameters, lang) {
+  let params = JSON.parse(JSON.stringify(parameters));
+  Object.keys(params).filter(it => it !== 'viewport').forEach(el => {
+    if (el === 'keywords')
+      params[el] = helpers.trlKeywords(params[el], lang);
+    else
+      params[el] = helpers.translateBaseOnLanguage(lang, params[el]);
+  });
+  return params;
+}
 
 /* the routes and templates that we need:
   /home, home.pug
@@ -130,27 +141,18 @@ function templateHandler(templateName, parameters = {}) {
   -> '/test' and 'test.pug' is implemented above
       as an example for different usages
 */
-router.get('/en/header',
-  dbCall('header', lib.PageInfo.getHeader),
-  templateHandler('header', {})
-);
-router.get('/de/header',
+router.get('/:lang/header',
   dbCall('header', lib.PageInfo.getHeader),
   templateHandler('header', {})
 );
 
-router.get('/en/footer',
+router.get('/:lang/footer',
   dbCall('footer', lib.PageInfo.getFooter),
   dbCall('about', lib.PageInfo.getAboutUs),
   templateHandler('footer', {})
 );
-router.get('/de/footer',
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('footer', {})
-);
 
-router.get('/en', dbCall('header', lib.PageInfo.getHeader),
+router.get('/:lang', dbCall('header', lib.PageInfo.getHeader),
   dbCall('topSection', lib.PageInfo.getHomeTopSection),
   dbCall('ourProcess', lib.PageInfo.getProcess),
   dbCall('toolbox', lib.PageInfo.getTechnology),
@@ -166,24 +168,8 @@ router.get('/en', dbCall('header', lib.PageInfo.getHeader),
     ...footer_items_en
   })
 );
-router.get('/de', dbCall('header', lib.PageInfo.getHeader),
-  dbCall('topSection', lib.PageInfo.getHomeTopSection),
-  dbCall('ourProcess', lib.PageInfo.getProcess),
-  dbCall('toolbox', lib.PageInfo.getTechnology),
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('home', {
-    title: 'Bent Oak Systems',
-    processTitle: helpers.translateBaseOnLanguage('German', 'Our Process'),
-    toolboxTitle: helpers.translateBaseOnLanguage('German', 'Our Toolbox'),
-    keywords: helpers.trlKeywords('Bent Oak Systems,web development,CICD,software development,dev ops', 'German'),
-    descriptions: helpers.translateBaseOnLanguage('German', 'Bent Oak Systems is a software and web development company founded in 2016'),
-    viewport: 'width=device-width, initial-scale=1',
-    ...footer_items_de
-  })
-);
 
-router.get('/en/home',
+router.get('/:lang/home',
   dbCall('header', lib.PageInfo.getHeader),
   dbCall('topSection', lib.PageInfo.getHomeTopSection),
   dbCall('ourProcess', lib.PageInfo.getProcess),
@@ -200,25 +186,8 @@ router.get('/en/home',
     ...footer_items_en
   })
 );
-router.get('/de/home',
-  dbCall('header', lib.PageInfo.getHeader),
-  dbCall('topSection', lib.PageInfo.getHomeTopSection),
-  dbCall('ourProcess', lib.PageInfo.getProcess),
-  dbCall('toolbox', lib.PageInfo.getTechnology),
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('home', {
-    title: 'Bent Oak Systems',
-    processTitle: helpers.translateBaseOnLanguage('German', 'Our Process'),
-    toolboxTitle: helpers.translateBaseOnLanguage('German', 'Our Toolbox'),
-    keywords: helpers.trlKeywords('Bent Oak Systems,web development,CICD,software development,dev ops', 'German'),
-    descriptions: helpers.translateBaseOnLanguage('German', 'Bent Oak Systems is a software and web development company founded in 2016'),
-    viewport: 'width=device-width, initial-scale=1',
-    ...footer_items_de
-  })
-);
 
-router.get('/en/projects',
+router.get('/:lang/projects',
   dbCall('header', lib.PageInfo.getHeader),
   dbCall('projects', lib.PageInfo.getProject),
   dbCall('footer', lib.PageInfo.getFooter),
@@ -231,21 +200,8 @@ router.get('/en/projects',
     ...footer_items_en
   })
 );
-router.get('/de/projects',
-  dbCall('header', lib.PageInfo.getHeader),
-  dbCall('projects', lib.PageInfo.getProject),
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('projects', {
-    title: helpers.translateBaseOnLanguage('German', 'Our Projects'),
-    keywords: helpers.trlKeywords('Burgista Timesheet,Planning and Budgeting App For Aria Teb,Quran Together App,Dr Mandegar\'s Electronic Medical Record App,Burgista Internal Delivery App', 'German'),
-    descriptions: helpers.translateBaseOnLanguage('German', 'Bent Oak Systems Projects'),
-    viewport: 'width=device-width, initial-scale=1',
-    ...footer_items_de
-  })
-);
 
-router.get('/en/people',
+router.get('/:lang/people',
   dbCall('header', lib.PageInfo.getHeader),
   dbCall('people', lib.PageInfo.getPeople),
   dbCall('footer', lib.PageInfo.getFooter),
@@ -259,25 +215,11 @@ router.get('/en/people',
     ...footer_items_en
   })
 );
-router.get('/de/people',
-  dbCall('header', lib.PageInfo.getHeader),
-  dbCall('people', lib.PageInfo.getPeople),
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('people', {
-    title: helpers.translateBaseOnLanguage('German', 'People In Bent Oak Systems'),
-    subtitle: helpers.translateBaseOnLanguage('German', 'People in our company'),
-    keywords: helpers.trlKeywords('People,bentoak,bent oak','German'),
-    descriptions: helpers.translateBaseOnLanguage('German', 'Bent Oak Systems people'),
-    viewport: 'width=device-width, initial-scale=1',
-    ...footer_items_de
-  })
-);
 
-router.get('/en/about-us',
+router.get('/:lang/about-us',
   dbCall('header', lib.PageInfo.getHeader),
   dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs),
+  dbCall('about', lib.PageInfo.getAboutUs.bind({isBot: true})),
   templateHandler('about-us', {
     title: 'About Us',
     keywords: 'People,Founder / CEO,Technical Manager,Business Consultant,Full-stack Developer,Test Automation',
@@ -286,20 +228,8 @@ router.get('/en/about-us',
     ...footer_items_en
   })
 );
-router.get('/de/about-us',
-  dbCall('header', lib.PageInfo.getHeader),
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('about-us', {
-    title: helpers.translateBaseOnLanguage('German', 'About Us'),
-    keywords: helpers.trlKeywords('People,Founder / CEO,Technical Manager,Business Consultant,Full-stack Developer,Test Automation', 'German'),
-    descriptions: helpers.translateBaseOnLanguage('German', 'About Bent Oak Systems'),
-    viewport: 'width=device-width, initial-scale=1',
-    ...footer_items_de
-  })
-);
 
-router.get('/en/pricing',
+router.get('/:lang/pricing',
   dbCall('header', lib.PageInfo.getHeader),
   dbCall('pricing', lib.PageInfo.getPricing),
   dbCall('footer', lib.PageInfo.getFooter),
@@ -312,21 +242,8 @@ router.get('/en/pricing',
     ...footer_items_en
   })
 );
-router.get('/de/pricing',
-  dbCall('header', lib.PageInfo.getHeader),
-  dbCall('pricing', lib.PageInfo.getPricing),
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('pricing', {
-    title: helpers.translateBaseOnLanguage('German', 'Pricing'),
-    keywords: helpers.trlKeywords('Fully Remote,Leveraged On-site Contract,Remote Technical Acceleration,Local Technical Acceleration', 'German'),
-    descriptions: helpers.translateBaseOnLanguage('German', 'Bent Oak Systems Pricing'),
-    viewport: 'width=device-width, initial-scale=1',
-    ...footer_items_de
-  })
-);
 
-router.get('/en/contact',
+router.get('/:lang/contact',
   dbCall('header', lib.PageInfo.getHeader),
   dbCall('footer', lib.PageInfo.getFooter),
   dbCall('about', lib.PageInfo.getAboutUs),
@@ -338,19 +255,5 @@ router.get('/en/contact',
     ...footer_items_en
   })
 );
-router.get('/de/contact',
-  dbCall('header', lib.PageInfo.getHeader),
-  dbCall('footer', lib.PageInfo.getFooter),
-  dbCall('about', lib.PageInfo.getAboutUs.bind({language: 'German'})),
-  templateHandler('contact', {
-    title: helpers.translateBaseOnLanguage('German', 'Contact us'),
-    subtitle: helpers.translateBaseOnLanguage('German', 'Get in touch with us'),
-    keywords: helpers.trlKeywords('contact,bentoak,bent oak', 'German'),
-    descriptions: helpers.translateBaseOnLanguage('German', 'Contact Bent Oak Systems'),
-    viewport: 'width=device-width, initial-scale=1',
-    ...footer_items_de
-  })
-);
-
 
 module.exports = router;

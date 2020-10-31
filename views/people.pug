@@ -1,6 +1,11 @@
 extends layout
 
 block content
+        if language === 'English'
+            a(href='/de/people')='People'
+        else if language === 'German'
+            a(href='/en/people')='Unser Team'
+
         div(style="text-align: center;")
             h1=title
         //- h2(style="text-align: center;") People in our company
