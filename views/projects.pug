@@ -1,6 +1,10 @@
 extends layout
 
 block content
+            if language === 'English'
+                a(href='/de/projects')='Projects'
+            else if language === 'German'
+                a(href='/en/projects')='Projekte'
             h1= title
             ul
             each project in projects

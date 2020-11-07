@@ -1,8 +1,12 @@
 extends layout
 
 block content
+    if language === 'English'
+        a(href='/de/contact')='Contact'
+    else if language === 'German'
+        a(href='/en/contact')='Kontakt'
     - let fo = footer[0]
-    h1="Get in touch with us"
+    h1=contactSection
     ul
         li= fo.address
         li= fo.phone

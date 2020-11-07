@@ -1,12 +1,19 @@
 extends layout
 
 block content
+    if language === 'English'
+        a(href='/de/home')='Home'
+    else if language === 'German'
+        a(href='/en/home')='Startseite'
     h1=title
     each slide in topSection
         div
-             a(href='/about-us')=slide.title
+             if language === 'English'
+                a(href='/en/about-us')=slide.title
+             else if language === 'German'
+                a(href='/de/about-us')=slide.title
              description=slide.intro
-             img(src=slide.backgroundPic)
+             img(src='/'+slide.backgroundPic)
         hr/
 
     h2=processTitle
@@ -20,4 +27,8 @@ block content
     each tool in toolbox
         a(herf=tool.url)
             h3=tool.title
-        img(src=tool.file.url)(alt=tool.title)
+        if tool.file.url.includes('assets/images')
+            img(src='/'+tool.file.url)(alt=tool.title)
+        else
+            img(src=tool.file.url)(alt=tool.title)
+        

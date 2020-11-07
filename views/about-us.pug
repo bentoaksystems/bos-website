@@ -1,11 +1,16 @@
 extends layout
 
 block content
+    if language === 'English'
+        a(href='/de/about-us')='About us'
+    else if language === 'German'
+        a(href='/en/about-us')='Über uns'
     h1=title
     ul
      each ab in about
-         h2= ab.title
-         img(src=ab.background)(alt="top image")(style="width: 150px; height: 150px")
-         br
-         description!=ab.description
+        if ab.title
+            h2= ab.title
+            img(src='/'+ab.background)(alt="top image")(style="width: 150px; height: 150px")
+            br
+            description!=ab.description
      hr/

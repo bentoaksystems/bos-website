@@ -1,14 +1,21 @@
 extends layout
 
 block content
+        if language === 'English'
+            a(href='/de/people')='People'
+        else if language === 'German'
+            a(href='/en/people')='Unser Team'
+
         div(style="text-align: center;")
             h1=title
-        h2(style="text-align: center;") People in our company
+        //- h2(style="text-align: center;") People in our company
+        div(style="text-align: center;")
+            h2=subtitle
         hr/
         ul
         each person in people
             h2= person.fullname
-            img(src=person.image)(alt="top image")(style="width: 150px; height: 150px")
+            img(src='/'+person.image)(alt="top image")(style="width: 150px; height: 150px")
             h3= person.responsibility
             ul
             each so in person.social
