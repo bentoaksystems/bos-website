@@ -141,6 +141,12 @@ function trlParams(parameters, lang) {
   -> '/test' and 'test.pug' is implemented above
       as an example for different usages
 */
+router.use((req, res, next) => {
+  if (req.url  === '/') {
+    req.url = '/en/home'
+  }
+  next();
+});
 router.get('/:lang/header',
   dbCall('header', lib.PageInfo.getHeader),
   templateHandler('header', {})
