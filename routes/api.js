@@ -21,6 +21,7 @@ function APIHandler(func) {
   });
 }
 
+router.post('/dictionary_words', APIHandler(lib.DictionaryService.getWordsBaseOnLocation));
 router.get('/page_info/about_us', APIHandler(lib.PageInfo.getAboutUs));
 router.get('/page_info/footer', APIHandler(lib.PageInfo.getFooter));
 router.get('/page_info/header', APIHandler(lib.PageInfo.getHeader));

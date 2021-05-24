@@ -15,6 +15,9 @@ const schema_obj = {
   },
   mainImage: {
     type: Schema.Types.Mixed,
+  },
+  only_iran: {
+    type: Schema.Types.Boolean,
   }
 };
 
