@@ -82,11 +82,11 @@
   {
     "title": "Jira Software ",
     "url": "https://www.atlassian.com/software/jira",
-    "description": " Jira Software is an agile project management tool that supports any agile methodology, be it scrum, kanban, or your own unique flavor.",
+    "description": "Jira Software is an agile project management tool that supports any agile methodology, be it scrum, kanban, or your own unique flavor.",
     "file": {
       "contentType": "image/png",
       "fileName": "Jira Software",
-      "url": "https://marketplace.brainwavegrc.com/wp-content/uploads/bw_store_facet_images/bw_jira_activities_icon-900x0.png"
+      "url": "assets/images/atlassian.webp"
     }
   },
   {
@@ -102,7 +102,7 @@
   {
     "title": "Git",
     "url": "https://git-scm.com",
-    "description": " Git is a free and open source distributed version control system designed to handle everything in most projects with speed and efficiency.",
+    "description": "Git is a free and open source distributed version control system designed to handle everything in most projects with speed and efficiency.",
     "file": {
       "contentType": "image/png",
       "fileName": "Git",
@@ -112,22 +112,22 @@
   {
     "title": "Slack",
     "url": "https://slack.com",
-    "description": " Slack is a place where your team comes together to collaborate, important information can be found by the right people..",
+    "description": "Slack is a place where your team comes together to collaborate, important information can be found by the right people..",
     "file": {
       "contentType": "image/png",
       "fileName": "Slack",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdvrsK0vhbYdQEU7P2mN2LkM0Cgfh3S9D17a4BYUvL7uRQJRb4"
+      "url": "assets/images/slack.svg"
 
     }
   },
   {
     "title": "Heroku",
     "url": "https://www.heroku.com/home",
-    "description": " Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps, we're the fastest way to go from idea to URL.",
+    "description": "Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps, we're the fastest way to go from idea to URL.",
     "file": {
       "contentType": "image/png",
       "fileName": "Heroku",
-      "url": "https://d1oxzbw21neycm.cloudfront.net/assets/service-thumbnails/Heroku.png"
+      "url": "assets/images/heroku.svg"
 
     }
   }

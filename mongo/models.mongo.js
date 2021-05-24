@@ -9,7 +9,9 @@ let schemas = {
   PricingSchema: require('./schema/pricing.schema'),
   ProcessSchema: require('./schema/process.schema'),
   ProjectSchema: require('./schema/project.schema'),
-  TechnologySchema: require('./schema/technology.schema')
+  TechnologySchema: require('./schema/technology.schema'),
+  DictionaryLocationSchema: require('./schema/dictionary_location.schema'),
+  MailSchema: require('./schema/mail.schema'),
 };
 
 // can save data out of schema using strict: false
